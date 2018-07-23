@@ -5,6 +5,10 @@
 		<br>
 		<%= f.text_field :price, placeholder: 'Price', class: 'form-control' %>
 		<br>
+		<div class="form-group">
+			<%= f.select :category_id, Category.all.collect {|x| [x.name, x.id]}, {:include_blank => 'Select One'},class:'form-control' %>
+		</div>
+		<br>
 		<%= f.submit "Submit", class: 'btn btn-primary' %>
 		<%=link_to "Cancel", foods_path %>
 	</div>
