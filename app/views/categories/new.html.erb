@@ -1,0 +1,11 @@
+<%= form_for @category do |f| %>
+						
+<div class="form-group">
+	<%= f.text_field :name, placeholder: 'Category Name', class: 'form-control' %>
+	<br>
+	<%= f.submit "Add New", class: 'btn btn-primary' %>
+	<%=link_to "Cancel", categories_path %>
+</div>
+
+
+<% end %>

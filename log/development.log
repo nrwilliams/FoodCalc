@@ -1,0 +1,3381 @@
+Started GET "/" for 127.0.0.1 at 2018-07-23 11:05:12 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Library/Ruby/Gems/2.3.0/gems/railties-5.2.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Library/Ruby/Gems/2.3.0/gems/railties-5.2.0/lib/rails/templates/rails/welcome/index.html.erb (4.5ms)
+Completed 200 OK in 34ms (Views: 11.2ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ bin/rails:4
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:4
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+Migrating to CreateFoods (20180723151241)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "foods" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "price" decimal(10,2), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20180723151241_create_foods.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180723151241"]]
+  ↳ bin/rails:4
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:4
+Migrating to CreateCategories (20180723151334)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "categories" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20180723151334_create_categories.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180723151334"]]
+  ↳ bin/rails:4
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-07-23 15:14:28.257936"], ["updated_at", "2018-07-23 15:14:28.257936"]]
+  ↳ bin/rails:4
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+Started GET "/" for 127.0.0.1 at 2018-07-23 11:14:51 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Library/Ruby/Gems/2.3.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Library/Ruby/Gems/2.3.0/gems/railties-5.2.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Library/Ruby/Gems/2.3.0/gems/railties-5.2.0/lib/rails/templates/rails/welcome/index.html.erb (3.9ms)
+Completed 200 OK in 34ms (Views: 11.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-23 11:15:15 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  Rendered foods/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 428ms (Views: 425.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-23 11:15:26 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  Rendered foods/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 30ms (Views: 27.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-23 11:15:26 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  Rendered foods/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 38ms (Views: 35.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-23 11:16:14 -0400
+Processing by FoodsController#calculator as HTML
+  Rendering foods/calculator.html.erb within layouts/application
+  Rendered foods/calculator.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 30ms (Views: 28.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/foods/new" for 127.0.0.1 at 2018-07-23 11:21:05 -0400
+Processing by FoodsController#new as HTML
+  Rendering foods/new.html.erb within layouts/application
+  Rendered foods/new.html.erb within layouts/application (97.5ms)
+Completed 500 Internal Server Error in 126ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `foods_path' for #<#<Class:0x007fa543bed558>:0x007fa54c387900>
+Did you mean?  foods_new_path
+               foods_index_path
+               foods_update_path
+               foods_edit_path
+               foods_create_path
+               foods_show_path
+               foods_update_url
+               foods_destroy_path
+               font_path):
+    1: <h1>Foods#new</h1>
+    2: <p>Find me in app/views/foods/new.html.erb</p>
+    3: 
+    4: <%= form_for @food do |f| %>
+    5: 	NAME
+    6: 	<%= f.text_field :name %>
+    7: 	PRICE
+  
+app/views/foods/new.html.erb:4:in `_app_views_foods_new_html_erb___2734111534416058746_70173891456800'
+Started GET "/foods/new" for 127.0.0.1 at 2018-07-23 11:22:04 -0400
+Processing by FoodsController#new as HTML
+  Rendering foods/new.html.erb within layouts/application
+  Rendered foods/new.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 42ms (Views: 25.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/foods/new" for 127.0.0.1 at 2018-07-23 11:22:34 -0400
+Processing by FoodsController#new as HTML
+  Rendering foods/new.html.erb within layouts/application
+  Rendered foods/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 23ms (Views: 20.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 11:22:36 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  Rendered foods/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 27ms (Views: 24.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/foods/new" for 127.0.0.1 at 2018-07-23 11:22:45 -0400
+Processing by FoodsController#new as HTML
+  Rendering foods/new.html.erb within layouts/application
+  Rendered foods/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 23ms (Views: 20.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/foods/new" for 127.0.0.1 at 2018-07-23 11:23:12 -0400
+Processing by FoodsController#new as HTML
+  Rendering foods/new.html.erb within layouts/application
+  Rendered foods/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 31ms (Views: 17.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 11:23:13 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  Rendered foods/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 25ms (Views: 22.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/foods/index" for 127.0.0.1 at 2018-07-23 11:23:23 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  Rendered foods/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 21ms (Views: 18.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/foods/new" for 127.0.0.1 at 2018-07-23 11:23:33 -0400
+Processing by FoodsController#new as HTML
+  Rendering foods/new.html.erb within layouts/application
+  Rendered foods/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 26ms (Views: 23.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 11:23:35 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  Rendered foods/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 25ms (Views: 22.1ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 11:25:05 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Library/Ruby/Gems/2.3.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  Rendered foods/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 261ms (Views: 235.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 11:25:06 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  Rendered foods/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 20ms (Views: 18.1ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mFood Load (0.5ms)[0m  [1m[34mSELECT  "foods".* FROM "foods" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Create (6.0ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Entree"], ["created_at", "2018-07-23 15:29:59.806692"], ["updated_at", "2018-07-23 15:29:59.806692"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/" for 127.0.0.1 at 2018-07-23 11:30:50 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Library/Ruby/Gems/2.3.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by FoodsController#calculator as HTML
+  Rendering foods/calculator.html.erb within layouts/application
+  Rendered foods/calculator.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 276ms (Views: 250.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-23 11:30:53 -0400
+Processing by FoodsController#calculator as HTML
+  Rendering foods/calculator.html.erb within layouts/application
+  Rendered foods/calculator.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 21ms (Views: 18.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/category" for 127.0.0.1 at 2018-07-23 11:30:57 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/category"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/categories" for 127.0.0.1 at 2018-07-23 11:31:07 -0400
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  Rendered categories/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 26ms (Views: 19.1ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:4
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bin/rake:22
+Started GET "/categories" for 127.0.0.1 at 2018-07-23 11:33:13 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Library/Ruby/Gems/2.3.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  Rendered categories/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 253ms (Views: 224.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2018-07-23 11:33:15 -0400
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  Rendered categories/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 20ms (Views: 18.3ms | ActiveRecord: 0.0ms)
+
+
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/categories" for 127.0.0.1 at 2018-07-23 11:34:22 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Library/Ruby/Gems/2.3.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  Rendered categories/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 249ms (Views: 220.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2018-07-23 11:35:06 -0400
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  Rendered categories/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 22ms (Views: 19.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2018-07-23 11:36:04 -0400
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/categories/index.html.erb:5
+  Rendered categories/index.html.erb within layouts/application (18.5ms)
+Completed 200 OK in 40ms (Views: 37.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2018-07-23 11:36:16 -0400
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/categories/index.html.erb:5
+  Rendered categories/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 20ms (Views: 18.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2018-07-23 11:38:10 -0400
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/categories/index.html.erb:5
+  Rendered categories/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 22ms (Views: 20.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2018-07-23 11:38:44 -0400
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/categories/index.html.erb:4
+  Rendered categories/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 22ms (Views: 19.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 11:40:02 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.6ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:3
+  Rendered foods/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 55ms (Views: 24.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/foods/create" for 127.0.0.1 at 2018-07-23 11:40:27 -0400
+Processing by FoodsController#create as HTML
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: food):
+  
+app/controllers/foods_controller.rb:33:in `food_params'
+app/controllers/foods_controller.rb:8:in `create'
+Started GET "/foods/new" for 127.0.0.1 at 2018-07-23 11:40:37 -0400
+Processing by FoodsController#new as HTML
+  Rendering foods/new.html.erb within layouts/application
+  Rendered foods/new.html.erb within layouts/application (29.6ms)
+Completed 200 OK in 63ms (Views: 54.1ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/foods" for 127.0.0.1 at 2018-07-23 11:41:35 -0400
+Processing by FoodsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mxZC/5/3puqxL/lqM91LW+2IFQR1Qvl5w7k1CCwoyfqFi+kPFTIEsBZ+189//yNyvO2+ImWWDsXuZO9gVDh4zg==", "food"=>{"name"=>"Brisket", "price"=>"9.99"}, "commit"=>"Submit"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/foods_controller.rb:9
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/foods_controller.rb:9
+  Rendering foods/create.html.erb within layouts/application
+  Rendered foods/create.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 36ms (Views: 22.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 11:41:37 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.1ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:3
+  Rendered foods/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 22ms (Views: 20.4ms | ActiveRecord: 0.1ms)
+
+
+  [1m[36mFood Load (0.4ms)[0m  [1m[34mSELECT  "foods".* FROM "foods" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/foods/new" for 127.0.0.1 at 2018-07-23 11:43:24 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Library/Ruby/Gems/2.3.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by FoodsController#new as HTML
+  Rendering foods/new.html.erb within layouts/application
+  Rendered foods/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 241ms (Views: 200.6ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/foods" for 127.0.0.1 at 2018-07-23 11:43:35 -0400
+Processing by FoodsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rRMMbzOkVEwARVlHa8aZOwgsvlpnSjWqxGKMJX4lCYyzjqefuWH2FqcUd+In5PESWUkVfHeewhbpv1ZNBjW4uA==", "food"=>{"name"=>"Hamburger", "price"=>"12.99"}, "commit"=>"Submit"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/foods_controller.rb:9
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/foods_controller.rb:9
+Redirected to http://localhost:3000/foods
+Completed 302 Found in 10ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 11:43:35 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.1ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:3
+  Rendered foods/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 20ms (Views: 17.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 11:43:42 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.1ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:3
+  Rendered foods/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 23ms (Views: 20.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 11:43:43 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:3
+  Rendered foods/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 46ms (Views: 43.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 11:44:15 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  Rendered foods/index.html.erb within layouts/application (4.4ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <h1>Foods</h1>
+    2: 
+    3: <% @food.each do |food| %>
+    4: 	<%= food.name %>
+    5: 	<%= food.price %>
+    6: 	<% end %>
+  
+app/views/foods/index.html.erb:3:in `_app_views_foods_index_html_erb__2566618788916956729_70115704173280'
+Started GET "/categories" for 127.0.0.1 at 2018-07-23 11:44:50 -0400
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  Rendered categories/index.html.erb within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: 
+    2: <h1>Categories</h1>
+    3: 
+    4: <% @category.each do |category| %>
+    5: 	<%= category.name %>
+    6: <% end %>
+  
+app/views/categories/index.html.erb:4:in `_app_views_categories_index_html_erb__3516091583961482323_70115692290640'
+Started GET "/categories" for 127.0.0.1 at 2018-07-23 11:44:50 -0400
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  Rendered categories/index.html.erb within layouts/application (9.7ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: 
+    2: <h1>Categories</h1>
+    3: 
+    4: <% @category.each do |category| %>
+    5: 	<%= category.name %>
+    6: <% end %>
+  
+app/views/categories/index.html.erb:4:in `_app_views_categories_index_html_erb__3516091583961482323_70115694650340'
+Started GET "/categories" for 127.0.0.1 at 2018-07-23 11:45:08 -0400
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/categories/index.html.erb:4
+  Rendered categories/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 27ms (Views: 24.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2018-07-23 11:46:18 -0400
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/categories/index.html.erb:4
+  Rendered categories/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 27ms (Views: 22.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 11:46:20 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  Rendered foods/index.html.erb within layouts/application (2.7ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <h1>Foods</h1>
+    2: 
+    3: <% @food.each do |food| %>
+    4: 	<%= food.name %>
+    5: 	<%= food.price %>
+    6: 	<% end %>
+  
+app/views/foods/index.html.erb:3:in `_app_views_foods_index_html_erb__2566618788916956729_70115742482980'
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 11:46:41 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:3
+  Rendered foods/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 22ms (Views: 19.3ms | ActiveRecord: 0.4ms)
+
+
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFood Create (0.6ms)[0m  [1m[32mINSERT INTO "foods" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Brisket"], ["price", 12.98], ["created_at", "2018-07-23 15:58:08.674694"], ["updated_at", "2018-07-23 15:58:08.674694"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/" for 127.0.0.1 at 2018-07-23 11:58:43 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Library/Ruby/Gems/2.3.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by FoodsController#calculator as HTML
+  Rendering foods/calculator.html.erb within layouts/application
+  Rendered foods/calculator.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 241ms (Views: 216.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 11:58:47 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:3
+  Rendered foods/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 30ms (Views: 24.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 12:00:06 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:4
+  Rendered foods/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 22ms (Views: 19.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/foods/new" for 127.0.0.1 at 2018-07-23 12:00:15 -0400
+Processing by FoodsController#new as HTML
+  Rendering foods/new.html.erb within layouts/application
+  Rendered foods/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 41ms (Views: 21.0ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/foods" for 127.0.0.1 at 2018-07-23 12:00:23 -0400
+Processing by FoodsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Hcma/nmi1/UNJfp17sKhlIlXTqwnbjQMLVwfvY5HIYkDVDEO82d1r6p01NCi4Mm92DLlije6w7AAgcXV9leQvQ==", "food"=>{"name"=>"Burger", "price"=>"5.97"}, "commit"=>"Submit"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/foods_controller.rb:9
+  [1m[36mFood Create (0.4ms)[0m  [1m[32mINSERT INTO "foods" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Burger"], ["price", 5.97], ["created_at", "2018-07-23 16:00:23.704700"], ["updated_at", "2018-07-23 16:00:23.704700"]]
+  ↳ app/controllers/foods_controller.rb:9
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/foods_controller.rb:9
+Redirected to http://localhost:3000/foods
+Completed 302 Found in 5ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 12:00:23 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:4
+  Rendered foods/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 20ms (Views: 17.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 12:01:20 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:16
+  Rendered foods/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 36ms (Views: 25.1ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/foods" for 127.0.0.1 at 2018-07-23 12:01:31 -0400
+Processing by FoodsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pR3DjeMYfYiWFBb5+DfFXYewcQdffMpTcfbu02LXrtC7gGh9ad3f0jFFOFy0Fa101tXaIU+oPe9cKzS7Gscf5A==", "food"=>{"name"=>"Pretzel", "price"=>"2.43"}, "commit"=>"Submit"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/foods_controller.rb:9
+  [1m[36mFood Create (0.4ms)[0m  [1m[32mINSERT INTO "foods" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Pretzel"], ["price", 2.43], ["created_at", "2018-07-23 16:01:31.678499"], ["updated_at", "2018-07-23 16:01:31.678499"]]
+  ↳ app/controllers/foods_controller.rb:9
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/foods_controller.rb:9
+Redirected to http://localhost:3000/foods
+Completed 302 Found in 6ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 12:01:31 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:16
+  Rendered foods/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 28ms (Views: 25.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 12:01:52 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:16
+  Rendered foods/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 42ms (Views: 28.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 12:03:16 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:16
+  Rendered foods/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 33ms (Views: 29.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 12:04:10 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:21
+  Rendered foods/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 30ms (Views: 27.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 12:04:53 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:21
+  Rendered foods/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 26ms (Views: 22.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 12:07:21 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:23
+  Rendered foods/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 22ms (Views: 19.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 12:07:39 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:23
+  Rendered foods/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 23ms (Views: 20.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 12:07:40 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:23
+  Rendered foods/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 25ms (Views: 22.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 12:08:43 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:23
+  Rendered foods/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 25ms (Views: 22.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 12:08:45 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:23
+  Rendered foods/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 24ms (Views: 21.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 12:08:48 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:23
+  Rendered foods/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 23ms (Views: 20.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 12:09:40 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:23
+  Rendered foods/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 24ms (Views: 21.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 12:09:57 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:23
+  Rendered foods/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 23ms (Views: 21.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 12:10:03 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:23
+  Rendered foods/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 26ms (Views: 23.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 12:10:08 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:23
+  Rendered foods/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 23ms (Views: 20.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 12:11:31 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:27
+  Rendered foods/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 28ms (Views: 26.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 12:11:51 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:27
+  Rendered foods/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 25ms (Views: 22.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 12:12:15 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:23
+  Rendered foods/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 23ms (Views: 21.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 12:13:33 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:27
+  Rendered foods/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 23ms (Views: 20.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 12:13:50 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:27
+  Rendered foods/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 22ms (Views: 19.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 12:14:05 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:27
+  Rendered foods/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 25ms (Views: 23.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 12:15:56 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:27
+  Rendered foods/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 23ms (Views: 21.1ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/foods/1" for 127.0.0.1 at 2018-07-23 12:16:00 -0400
+Processing by FoodsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"huaosAsWdDbU5uh2wdxw3Lynvui0OXZ3iqMfYPzTjnaYewNAgdPWbHO3xtON/hj17cIVzqTtgcunfsUIhMM/Qg==", "id"=>"1"}
+  Rendering foods/destroy.html.erb within layouts/application
+  Rendered foods/destroy.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 24ms (Views: 22.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 12:16:26 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:27
+  Rendered foods/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 25ms (Views: 22.6ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/foods/1" for 127.0.0.1 at 2018-07-23 12:16:30 -0400
+Processing by FoodsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"WUKBGWBCsFodRYKEXfRB+C0oqRa8yVdviCX0cziPsN1H3yrp6ocSALoUrCER1inRfE0CMKwdoNOl+C4bQJ8B6Q==", "id"=>"1"}
+  Rendering foods/destroy.html.erb within layouts/application
+  Rendered foods/destroy.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 24ms (Views: 21.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 12:16:33 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:27
+  Rendered foods/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 27ms (Views: 25.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 12:16:35 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:27
+  Rendered foods/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 24ms (Views: 22.1ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/foods/3" for 127.0.0.1 at 2018-07-23 12:16:41 -0400
+Processing by FoodsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"8h56PoUdOQhzk1M8x7esGv/RMqPPqCP1TCxdag3dyDjsg9HOD9ibUtTCfZmLlcQzrrSZhd981Elh8YcCdc15DA==", "id"=>"3"}
+  Rendering foods/destroy.html.erb within layouts/application
+  Rendered foods/destroy.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 23ms (Views: 21.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 12:16:46 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.1ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:27
+  Rendered foods/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 21ms (Views: 18.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 12:16:46 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.1ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:27
+  Rendered foods/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 19ms (Views: 17.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 12:16:47 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:27
+  Rendered foods/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 21ms (Views: 18.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 12:16:47 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.1ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:27
+  Rendered foods/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 19ms (Views: 17.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 12:16:47 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:27
+  Rendered foods/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 20ms (Views: 18.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 12:17:43 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:27
+  Rendered foods/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 33ms (Views: 24.2ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/foods/1" for 127.0.0.1 at 2018-07-23 12:17:45 -0400
+Processing by FoodsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"BariGzjufse87g/ju4yhoxpmPY7VoZ5+5Lsi+BkqIu8bN0nrsivcnRu/IUb3rsmKSwOWqMV1acLJZviQYTqT2w==", "id"=>"1"}
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT  "foods".* FROM "foods" WHERE "foods"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/foods_controller.rb:24
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/foods_controller.rb:25
+  [1m[36mFood Destroy (0.3ms)[0m  [1m[31mDELETE FROM "foods" WHERE "foods"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/foods_controller.rb:25
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/foods_controller.rb:25
+Redirected to http://localhost:3000/foods
+Completed 302 Found in 6ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 12:17:45 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:27
+  Rendered foods/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 31ms (Views: 29.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/foods" for 127.0.0.1 at 2018-07-23 12:17:52 -0400
+Processing by FoodsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WQEGFM7F3xsJt29qb/Iuc+Jb9BZTDZYsKb+lzMJZeJ1HnK3kRAB9Qa7mQc8j0EZasz5fMEPZYZAEYn+kuknJqQ==", "food"=>{"name"=>"Brisket", "price"=>"9.99"}, "commit"=>"Add New"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/foods_controller.rb:5
+  [1m[36mFood Create (0.4ms)[0m  [1m[32mINSERT INTO "foods" ("name", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Brisket"], ["price", 9.99], ["created_at", "2018-07-23 16:17:52.613997"], ["updated_at", "2018-07-23 16:17:52.613997"]]
+  ↳ app/controllers/foods_controller.rb:5
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/foods_controller.rb:5
+Redirected to http://localhost:3000/foods
+Completed 302 Found in 4ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 12:17:52 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:27
+  Rendered foods/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 21ms (Views: 19.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 12:18:25 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:27
+  Rendered foods/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 30ms (Views: 21.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/foods/4/edit" for 127.0.0.1 at 2018-07-23 12:18:26 -0400
+Processing by FoodsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT  "foods".* FROM "foods" WHERE "foods"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/foods_controller.rb:31
+  Rendering foods/edit.html.erb within layouts/application
+  Rendered foods/edit.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 29ms (Views: 19.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/foods/4/edit" for 127.0.0.1 at 2018-07-23 12:18:42 -0400
+Processing by FoodsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mFood Load (0.1ms)[0m  [1m[34mSELECT  "foods".* FROM "foods" WHERE "foods"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/foods_controller.rb:31
+  Rendering foods/edit.html.erb within layouts/application
+  Rendered foods/edit.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 24ms (Views: 21.2ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/foods/4" for 127.0.0.1 at 2018-07-23 12:18:49 -0400
+Processing by FoodsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UjU2j4TeJIKZrXtibeF8M+vNMTzaajpyyCFwf+CQAyRMqJ1/DhuG2D78VcchwxQauqiaGsq+zc7l/KoXmICyEA==", "food"=>{"name"=>"Brisket", "price"=>"12.34"}, "commit"=>"Add New", "id"=>"4"}
+  Rendering foods/update.html.erb within layouts/application
+  Rendered foods/update.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 26ms (Views: 23.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 12:19:00 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:27
+  Rendered foods/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 24ms (Views: 22.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 12:19:27 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:27
+  Rendered foods/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 32ms (Views: 22.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/foods/2/edit" for 127.0.0.1 at 2018-07-23 12:19:29 -0400
+Processing by FoodsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT  "foods".* FROM "foods" WHERE "foods"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/foods_controller.rb:33
+  Rendering foods/edit.html.erb within layouts/application
+  Rendered foods/edit.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 26ms (Views: 22.8ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/foods/2" for 127.0.0.1 at 2018-07-23 12:19:31 -0400
+Processing by FoodsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PskaXq/Etmd2ygzJ6p1irgy5RQY+cbz1gDiD2jez68Y+I+UcJ4qk0bBusrhpU+sETSA/x2AKh5/SNE5Z3sCjfA==", "food"=>{"name"=>"Burger", "price"=>"5.99"}, "commit"=>"Submit", "id"=>"2"}
+  [1m[36mFood Load (0.1ms)[0m  [1m[34mSELECT  "foods".* FROM "foods" WHERE "foods"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/foods_controller.rb:21
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/foods_controller.rb:22
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/foods_controller.rb:22
+  Rendering foods/update.html.erb within layouts/application
+  Rendered foods/update.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 25ms (Views: 20.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 12:19:34 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:27
+  Rendered foods/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 23ms (Views: 20.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 12:20:00 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:27
+  Rendered foods/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 33ms (Views: 22.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/foods/2/edit" for 127.0.0.1 at 2018-07-23 12:20:02 -0400
+Processing by FoodsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT  "foods".* FROM "foods" WHERE "foods"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/foods_controller.rb:35
+  Rendering foods/edit.html.erb within layouts/application
+  Rendered foods/edit.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 26ms (Views: 22.3ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/foods/2" for 127.0.0.1 at 2018-07-23 12:20:10 -0400
+Processing by FoodsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cFBazAs50basX0fNpgLtylwvFnH+gYk7BFK8BHSy/bVwuqWOg3fDAGr7+bwlzGRgHbZssKD6slFWXnGHncG1Dw==", "food"=>{"name"=>"Burger", "price"=>"6.76"}, "commit"=>"Submit", "id"=>"2"}
+  [1m[36mFood Load (0.1ms)[0m  [1m[34mSELECT  "foods".* FROM "foods" WHERE "foods"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/foods_controller.rb:21
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/foods_controller.rb:22
+  [1m[36mFood Update (0.6ms)[0m  [1m[33mUPDATE "foods" SET "price" = ?, "updated_at" = ? WHERE "foods"."id" = ?[0m  [["price", 6.76], ["updated_at", "2018-07-23 16:20:10.014881"], ["id", 2]]
+  ↳ app/controllers/foods_controller.rb:22
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/foods_controller.rb:22
+Redirected to http://localhost:3000/foods
+Completed 302 Found in 6ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 12:20:10 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:27
+  Rendered foods/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 35ms (Views: 32.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/foods/2/edit" for 127.0.0.1 at 2018-07-23 12:20:12 -0400
+Processing by FoodsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mFood Load (0.1ms)[0m  [1m[34mSELECT  "foods".* FROM "foods" WHERE "foods"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/foods_controller.rb:35
+  Rendering foods/edit.html.erb within layouts/application
+  Rendered foods/edit.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 28ms (Views: 24.8ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/foods/2" for 127.0.0.1 at 2018-07-23 12:20:16 -0400
+Processing by FoodsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RADB+Som+9ZbfVQqrVjcWWGKel63h6ZFi3HbsLq7zr9E6j67omjpYJ3Z6lsullXzIBMAn+n8nS/ZfRYzU8iGBQ==", "food"=>{"name"=>"Burger", "price"=>"6.764"}, "commit"=>"Submit", "id"=>"2"}
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT  "foods".* FROM "foods" WHERE "foods"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/foods_controller.rb:21
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/foods_controller.rb:22
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/foods_controller.rb:22
+Redirected to http://localhost:3000/foods
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 12:20:16 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:27
+  Rendered foods/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 26ms (Views: 23.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/foods/3/edit" for 127.0.0.1 at 2018-07-23 12:20:21 -0400
+Processing by FoodsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT  "foods".* FROM "foods" WHERE "foods"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/foods_controller.rb:35
+  Rendering foods/edit.html.erb within layouts/application
+  Rendered foods/edit.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 29ms (Views: 24.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 12:20:23 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:27
+  Rendered foods/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 44ms (Views: 41.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 12:24:12 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:27
+  Rendered foods/index.html.erb within layouts/application (23.2ms)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (Missing partial foods/_edit with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/nick/foodCalc/app/views"
+):
+    38: 	</div>
+    39: </div>
+    40: 
+    41: <%= render 'foods/edit' %>
+  
+app/views/foods/index.html.erb:41:in `_app_views_foods_index_html_erb___4397663476194373530_70325672696400'
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 12:25:50 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:27
+  Rendered foods/index.html.erb within layouts/application (5.5ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (Missing partial foods/_edit with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/nick/foodCalc/app/views"
+):
+    38: 	</div>
+    39: </div>
+    40: 
+    41: <%= render 'foods/edit' %>
+  
+app/views/foods/index.html.erb:41:in `_app_views_foods_index_html_erb___4397663476194373530_70325741359340'
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 12:26:31 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:27
+  Rendered foods/index.html.erb within layouts/application (5.9ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (Missing partial foods/_edit with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/nick/foodCalc/app/views"
+):
+    38: 	</div>
+    39: </div>
+    40: 
+    41: <%= render 'foods/edit' %>
+  
+app/views/foods/index.html.erb:41:in `_app_views_foods_index_html_erb___4397663476194373530_70325745130280'
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 12:26:32 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:27
+  Rendered foods/index.html.erb within layouts/application (5.3ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (Missing partial foods/_edit with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/nick/foodCalc/app/views"
+):
+    38: 	</div>
+    39: </div>
+    40: 
+    41: <%= render 'foods/edit' %>
+  
+app/views/foods/index.html.erb:41:in `_app_views_foods_index_html_erb___4397663476194373530_70325677021300'
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 12:26:43 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:27
+  Rendered foods/index.html.erb within layouts/application (6.3ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (Missing partial partials/_edit with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/nick/foodCalc/app/views"
+):
+    38: 	</div>
+    39: </div>
+    40: 
+    41: <%= render 'partials/edit' %>
+  
+app/views/foods/index.html.erb:41:in `_app_views_foods_index_html_erb___4397663476194373530_70325741708920'
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 12:27:26 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.3ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:27
+  Rendered foods/index.html.erb within layouts/application (6.2ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (Missing partial partials/_edit with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/nick/foodCalc/app/views"
+):
+    38: 	</div>
+    39: </div>
+    40: 
+    41: <%= render 'partials/edit' %>
+  
+app/views/foods/index.html.erb:41:in `_app_views_foods_index_html_erb___4397663476194373530_70325697396300'
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 12:27:27 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:27
+  Rendered foods/index.html.erb within layouts/application (6.0ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (Missing partial partials/_edit with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/nick/foodCalc/app/views"
+):
+    38: 	</div>
+    39: </div>
+    40: 
+    41: <%= render 'partials/edit' %>
+  
+app/views/foods/index.html.erb:41:in `_app_views_foods_index_html_erb___4397663476194373530_70325671492160'
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 12:27:48 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:27
+  Rendered partials/_edit.html.erb (0.3ms)
+  Rendered foods/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 35ms (Views: 32.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 12:27:57 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:27
+  Rendered partials/_edit.html.erb (1.0ms)
+  Rendered foods/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 26ms (Views: 23.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/foods/2/edit" for 127.0.0.1 at 2018-07-23 12:28:00 -0400
+Processing by FoodsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mFood Load (0.1ms)[0m  [1m[34mSELECT  "foods".* FROM "foods" WHERE "foods"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/foods_controller.rb:35
+  Rendering foods/edit.html.erb within layouts/application
+  Rendered foods/edit.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 26ms (Views: 22.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 12:28:02 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:27
+  Rendered partials/_edit.html.erb (1.1ms)
+  Rendered foods/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 31ms (Views: 27.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 12:28:33 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:27
+  Rendered foods/index.html.erb within layouts/application (120.1ms)
+Completed 500 Internal Server Error in 127ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `edit_partials_path' for #<#<Class:0x007febf78f9d88>:0x007febf25bc1c0>
+Did you mean?  edit_category_path):
+    28: 					<tr>
+    29: 						<td><%= food.name %></td>
+    30: 						<td><%= food.price %></td>
+    31: 						<td><%= link_to 'Edit', edit_partials_path(food.id) %> | <%= link_to 'Delete', food_path(food), method: :delete, data: {confirm: 'Are you sure?'} %></td>
+    32: 					</tr>
+    33: 					<% end %>
+    34: 					</table>
+  
+app/views/foods/index.html.erb:31:in `block in _app_views_foods_index_html_erb___4397663476194373530_70325670671400'
+app/views/foods/index.html.erb:27:in `_app_views_foods_index_html_erb___4397663476194373530_70325670671400'
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 12:29:15 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:27
+  Rendered foods/_edit.html.erb (1.4ms)
+  Rendered foods/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 29ms (Views: 26.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/foods/4/edit" for 127.0.0.1 at 2018-07-23 12:29:21 -0400
+Processing by FoodsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT  "foods".* FROM "foods" WHERE "foods"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/foods_controller.rb:35
+Completed 406 Not Acceptable in 87ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionController::UnknownFormat (FoodsController#edit is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.2.0) lib/action_controller/metal/implicit_render.rb:55:in `default_render'
+actionpack (5.2.0) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (5.2.0) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (5.2.0) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.0) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.0) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.0) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.0) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.0) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.0) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.0) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.0) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.0) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.0) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.0) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.0) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.0) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.0) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.0) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.0) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.0) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.0) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.0) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.0) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.0) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.0) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.0) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/foods/4/edit" for 127.0.0.1 at 2018-07-23 12:29:39 -0400
+Processing by FoodsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mFood Load (0.1ms)[0m  [1m[34mSELECT  "foods".* FROM "foods" WHERE "foods"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/foods_controller.rb:35
+  Rendering foods/edit.html.erb within layouts/application
+  Rendered foods/edit.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 24ms (Views: 21.0ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/foods/4" for 127.0.0.1 at 2018-07-23 12:29:42 -0400
+Processing by FoodsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aI8Dz0XHX19MYMVWRBjOHJWXmNXsPG1s5CpwtUnmVa12Eqg/zwL9Besx6/MIOqY1xPIz8/zomtDJ96rdMfbkmQ==", "food"=>{"name"=>"Brisket", "price"=>"9.99"}, "commit"=>"Submit", "id"=>"4"}
+  [1m[36mFood Load (0.1ms)[0m  [1m[34mSELECT  "foods".* FROM "foods" WHERE "foods"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/foods_controller.rb:21
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/foods_controller.rb:22
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/foods_controller.rb:22
+Redirected to http://localhost:3000/foods
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 12:29:42 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:27
+  Rendered foods/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 24ms (Views: 22.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 12:30:01 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:27
+  Rendered foods/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 23ms (Views: 20.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/foods/2/edit" for 127.0.0.1 at 2018-07-23 12:30:03 -0400
+Processing by FoodsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT  "foods".* FROM "foods" WHERE "foods"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/foods_controller.rb:35
+  Rendering foods/edit.html.erb within layouts/application
+  Rendered foods/edit.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 25ms (Views: 22.0ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/foods/2" for 127.0.0.1 at 2018-07-23 12:30:06 -0400
+Processing by FoodsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MECkNkKcxbOjLClAfckL5H4+/mNiyNce75s8OYtDQR8wqlt0ytLXBWWIlzH+B4JOP6eEojyz7HS9l/G6YjAJpQ==", "food"=>{"name"=>"Burger", "price"=>"8"}, "commit"=>"Submit", "id"=>"2"}
+  [1m[36mFood Load (0.1ms)[0m  [1m[34mSELECT  "foods".* FROM "foods" WHERE "foods"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/foods_controller.rb:21
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/foods_controller.rb:22
+  [1m[36mFood Update (0.7ms)[0m  [1m[33mUPDATE "foods" SET "price" = ?, "updated_at" = ? WHERE "foods"."id" = ?[0m  [["price", 8.0], ["updated_at", "2018-07-23 16:30:06.904434"], ["id", 2]]
+  ↳ app/controllers/foods_controller.rb:22
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/foods_controller.rb:22
+Redirected to http://localhost:3000/foods
+Completed 302 Found in 6ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 12:30:06 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:27
+  Rendered foods/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 26ms (Views: 23.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 12:30:25 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:27
+  Rendered foods/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 24ms (Views: 22.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/foods/2/edit" for 127.0.0.1 at 2018-07-23 12:30:27 -0400
+Processing by FoodsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mFood Load (0.1ms)[0m  [1m[34mSELECT  "foods".* FROM "foods" WHERE "foods"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/foods_controller.rb:35
+  Rendering foods/edit.html.erb within layouts/application
+  Rendered foods/edit.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 33ms (Views: 29.4ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/foods/2" for 127.0.0.1 at 2018-07-23 12:30:30 -0400
+Processing by FoodsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"J6xDL8nPCWNMDghYibzLfFdIu2YjP7D5INS+s36xOUInRrxtQYEb1YqqtikKckLWFtHBp31Ei5Ny2HMwl8Jx+A==", "food"=>{"name"=>"Burger", "price"=>"8.00"}, "commit"=>"Submit", "id"=>"2"}
+  [1m[36mFood Load (0.1ms)[0m  [1m[34mSELECT  "foods".* FROM "foods" WHERE "foods"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/foods_controller.rb:21
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/foods_controller.rb:22
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/foods_controller.rb:22
+Redirected to http://localhost:3000/foods
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 12:30:30 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:27
+  Rendered foods/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 26ms (Views: 23.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/foods/2/edit" for 127.0.0.1 at 2018-07-23 12:30:31 -0400
+Processing by FoodsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mFood Load (0.1ms)[0m  [1m[34mSELECT  "foods".* FROM "foods" WHERE "foods"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/foods_controller.rb:35
+  Rendering foods/edit.html.erb within layouts/application
+  Rendered foods/edit.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 25ms (Views: 22.2ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/foods/2" for 127.0.0.1 at 2018-07-23 12:30:33 -0400
+Processing by FoodsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sS8rfxKPvqVtPhHvW4Nye+gz8+SX25mKFRhRZWCoOM6xxdQ9msGsE6uar57YTfvRqaqJJcmgouBHFJzmidtwdA==", "food"=>{"name"=>"Burger", "price"=>"8.01"}, "commit"=>"Submit", "id"=>"2"}
+  [1m[36mFood Load (0.1ms)[0m  [1m[34mSELECT  "foods".* FROM "foods" WHERE "foods"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/foods_controller.rb:21
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/foods_controller.rb:22
+  [1m[36mFood Update (0.4ms)[0m  [1m[33mUPDATE "foods" SET "price" = ?, "updated_at" = ? WHERE "foods"."id" = ?[0m  [["price", 8.01], ["updated_at", "2018-07-23 16:30:33.295658"], ["id", 2]]
+  ↳ app/controllers/foods_controller.rb:22
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/foods_controller.rb:22
+Redirected to http://localhost:3000/foods
+Completed 302 Found in 6ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 12:30:33 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:27
+  Rendered foods/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 25ms (Views: 22.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/calculator" for 127.0.0.1 at 2018-07-23 12:31:33 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/calculator"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/foods/%20calculator" for 127.0.0.1 at 2018-07-23 12:31:36 -0400
+Processing by FoodsController#show as HTML
+  Parameters: {"id"=>" calculator"}
+  Rendering foods/show.html.erb within layouts/application
+  Rendered foods/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 22ms (Views: 20.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/foodscalculator" for 127.0.0.1 at 2018-07-23 12:31:39 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/foodscalculator"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/foods/calculator" for 127.0.0.1 at 2018-07-23 12:31:42 -0400
+Processing by FoodsController#show as HTML
+  Parameters: {"id"=>"calculator"}
+  Rendering foods/show.html.erb within layouts/application
+  Rendered foods/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 27ms (Views: 25.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/foods/show" for 127.0.0.1 at 2018-07-23 12:31:54 -0400
+Processing by FoodsController#show as HTML
+  Rendering foods/show.html.erb within layouts/application
+  Rendered foods/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 21ms (Views: 19.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/foods/calculator" for 127.0.0.1 at 2018-07-23 12:32:14 -0400
+Processing by FoodsController#show as HTML
+  Parameters: {"id"=>"calculator"}
+  Rendering foods/show.html.erb within layouts/application
+  Rendered foods/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 22ms (Views: 19.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/foods/calculator" for 127.0.0.1 at 2018-07-23 12:32:16 -0400
+Processing by FoodsController#show as HTML
+  Parameters: {"id"=>"calculator"}
+  Rendering foods/show.html.erb within layouts/application
+  Rendered foods/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 22ms (Views: 20.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/foods/calculator" for 127.0.0.1 at 2018-07-23 12:32:32 -0400
+Processing by FoodsController#show as HTML
+  Parameters: {"id"=>"calculator"}
+  Rendering foods/show.html.erb within layouts/application
+  Rendered foods/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 22ms (Views: 20.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/foods/show" for 127.0.0.1 at 2018-07-23 12:32:41 -0400
+Processing by FoodsController#show as HTML
+  Rendering foods/show.html.erb within layouts/application
+  Rendered foods/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 24ms (Views: 20.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/foods/calculator" for 127.0.0.1 at 2018-07-23 12:32:43 -0400
+Processing by FoodsController#show as HTML
+  Parameters: {"id"=>"calculator"}
+  Rendering foods/show.html.erb within layouts/application
+  Rendered foods/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 21ms (Views: 19.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/foods/calculator" for 127.0.0.1 at 2018-07-23 12:32:43 -0400
+Processing by FoodsController#show as HTML
+  Parameters: {"id"=>"calculator"}
+  Rendering foods/show.html.erb within layouts/application
+  Rendered foods/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 24ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/foods/calculator" for 127.0.0.1 at 2018-07-23 12:32:44 -0400
+Processing by FoodsController#show as HTML
+  Parameters: {"id"=>"calculator"}
+  Rendering foods/show.html.erb within layouts/application
+  Rendered foods/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 41ms (Views: 39.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/foods/calculator" for 127.0.0.1 at 2018-07-23 12:32:44 -0400
+Processing by FoodsController#show as HTML
+  Parameters: {"id"=>"calculator"}
+  Rendering foods/show.html.erb within layouts/application
+  Rendered foods/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 24ms (Views: 22.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/foods/calculator" for 127.0.0.1 at 2018-07-23 12:32:44 -0400
+Processing by FoodsController#show as HTML
+  Parameters: {"id"=>"calculator"}
+  Rendering foods/show.html.erb within layouts/application
+  Rendered foods/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 20ms (Views: 18.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/foods/calculator" for 127.0.0.1 at 2018-07-23 12:32:57 -0400
+Processing by FoodsController#show as HTML
+  Parameters: {"id"=>"calculator"}
+  Rendering foods/show.html.erb within layouts/application
+  Rendered foods/show.html.erb within layouts/application (2.9ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <table class="table table-striped">
+    2: 					<% @foods.each do |food| %>
+    3: 					<tr>
+    4: 						<td><%= food.name %></td>
+    5: 						<td>$<%= food.price %></td>
+  
+app/views/foods/show.html.erb:2:in `_app_views_foods_show_html_erb__294774964056834140_70325740046720'
+Started GET "/foods/calculator" for 127.0.0.1 at 2018-07-23 12:33:07 -0400
+Processing by FoodsController#show as HTML
+  Parameters: {"id"=>"calculator"}
+  Rendering foods/show.html.erb within layouts/application
+  Rendered foods/show.html.erb within layouts/application (3.4ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <table class="table table-striped">
+    2: 					<% @foods.each do |food| %>
+    3: 					<tr>
+    4: 						<td><%= food.name %></td>
+    5: 						<td>$<%= food.price %></td>
+  
+app/views/foods/show.html.erb:2:in `_app_views_foods_show_html_erb__294774964056834140_70325697786800'
+Started GET "/foods/calculator" for 127.0.0.1 at 2018-07-23 12:33:32 -0400
+Processing by FoodsController#show as HTML
+  Parameters: {"id"=>"calculator"}
+  Rendering foods/show.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/show.html.erb:2
+  Rendered foods/show.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 31ms (Views: 26.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/foods/calculator" for 127.0.0.1 at 2018-07-23 12:33:44 -0400
+Processing by FoodsController#show as HTML
+  Parameters: {"id"=>"calculator"}
+  Rendering foods/show.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/show.html.erb:2
+  Rendered foods/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 26ms (Views: 23.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/foods/calculator" for 127.0.0.1 at 2018-07-23 12:33:49 -0400
+Processing by FoodsController#show as HTML
+  Parameters: {"id"=>"calculator"}
+  Rendering foods/show.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/show.html.erb:2
+  Rendered foods/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 21ms (Views: 18.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/foods/calculator" for 127.0.0.1 at 2018-07-23 12:33:58 -0400
+Processing by FoodsController#show as HTML
+  Parameters: {"id"=>"calculator"}
+  Rendering foods/show.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/show.html.erb:2
+  Rendered foods/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 21ms (Views: 19.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/foods/calculator" for 127.0.0.1 at 2018-07-23 12:36:18 -0400
+Processing by FoodsController#show as HTML
+  Parameters: {"id"=>"calculator"}
+  Rendering foods/show.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/show.html.erb:2
+  Rendered foods/show.html.erb within layouts/application (3.4ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+     9: </table>
+    10: 
+    11: 
+    12: <%= form_for @food do |f| %>
+    13: 					
+    14: 	<div class="form-group">
+    15: 		<%= f.check_box :name, placeholder: 'Food Name', class: 'form-control' %>
+  
+app/views/foods/show.html.erb:12:in `_app_views_foods_show_html_erb__294774964056834140_70325697671760'
+Started GET "/foods/calculator" for 127.0.0.1 at 2018-07-23 12:36:27 -0400
+Processing by FoodsController#show as HTML
+  Parameters: {"id"=>"calculator"}
+  Rendering foods/show.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/show.html.erb:2
+  Rendered foods/show.html.erb within layouts/application (8.8ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `to_key' for #<Food::ActiveRecord_Relation:0x007febf22eae88>
+Did you mean?  to_query
+               to_set
+               to_ary):
+     9: </table>
+    10: 
+    11: 
+    12: <%= form_for @foods do |f| %>
+    13: 					
+    14: 	<div class="form-group">
+    15: 		<%= f.check_box :name, placeholder: 'Food Name', class: 'form-control' %>
+  
+app/views/foods/show.html.erb:12:in `_app_views_foods_show_html_erb__294774964056834140_70325678608520'
+Started GET "/foods/calculator" for 127.0.0.1 at 2018-07-23 12:36:45 -0400
+Processing by FoodsController#show as HTML
+  Parameters: {"id"=>"calculator"}
+  Rendering foods/show.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/show.html.erb:2
+  Rendered foods/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 34ms (Views: 32.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/foods/calculator" for 127.0.0.1 at 2018-07-23 12:36:54 -0400
+Processing by FoodsController#show as HTML
+  Parameters: {"id"=>"calculator"}
+  Rendering foods/show.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/show.html.erb:2
+  Rendered foods/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 23ms (Views: 21.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/foods/calculator" for 127.0.0.1 at 2018-07-23 12:44:37 -0400
+Processing by FoodsController#show as HTML
+  Parameters: {"id"=>"calculator"}
+  Rendering foods/show.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/show.html.erb:4
+  Rendered foods/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 32ms (Views: 29.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/foods/calculator" for 127.0.0.1 at 2018-07-23 12:46:59 -0400
+Processing by FoodsController#show as HTML
+  Parameters: {"id"=>"calculator"}
+  Rendering foods/show.html.erb within layouts/application
+  Rendered foods/show.html.erb within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: 
+    2: <%= form_for @food do |f| %>
+    3: 
+    4: 
+    5: <table class="table table-striped">
+  
+app/views/foods/show.html.erb:2:in `_app_views_foods_show_html_erb__294774964056834140_70325741731540'
+Started GET "/foods/calculator" for 127.0.0.1 at 2018-07-23 12:47:18 -0400
+Processing by FoodsController#show as HTML
+  Parameters: {"id"=>"calculator"}
+  Rendering foods/show.html.erb within layouts/application
+  [1m[36mFood Load (0.3ms)[0m  [1m[34mSELECT  "foods".* FROM "foods" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /Library/Ruby/Gems/2.3.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendered foods/show.html.erb within layouts/application (7.1ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `to_key' for #<Food::ActiveRecord_Relation:0x007febf79789f8>
+Did you mean?  to_query
+               to_set
+               to_ary):
+    1: 
+    2: <%= form_for @foods do |f| %>
+    3: 
+    4: 
+    5: <table class="table table-striped">
+  
+app/views/foods/show.html.erb:2:in `_app_views_foods_show_html_erb__294774964056834140_70325723958460'
+Started GET "/foods/calculator" for 127.0.0.1 at 2018-07-23 12:47:32 -0400
+Processing by FoodsController#show as HTML
+  Parameters: {"id"=>"calculator"}
+  Rendering foods/show.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT  "foods".* FROM "foods" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /Library/Ruby/Gems/2.3.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendered foods/show.html.erb within layouts/application (7.8ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `to_key' for #<Food::ActiveRecord_Relation:0x007febf40ee150>
+Did you mean?  to_query
+               to_set
+               to_ary):
+    1: 
+    2: <%= form_for @foods do |f| %>
+    3: 
+    4: 
+    5: <table class="table table-striped">
+  
+app/views/foods/show.html.erb:2:in `_app_views_foods_show_html_erb__294774964056834140_70325694318920'
+Started GET "/foods/calculator" for 127.0.0.1 at 2018-07-23 12:47:55 -0400
+Processing by FoodsController#show as HTML
+  Parameters: {"id"=>"calculator"}
+  Rendering foods/show.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT  "foods".* FROM "foods" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /Library/Ruby/Gems/2.3.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendered foods/show.html.erb within layouts/application (6.8ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `to_key' for #<Food::ActiveRecord_Relation:0x007febfa1e2858>
+Did you mean?  to_query
+               to_set
+               to_ary):
+    1: 
+    2: <%= form_for @foods do |food| %>
+    3: 
+    4: 
+    5: <table class="table table-striped">
+  
+app/views/foods/show.html.erb:2:in `_app_views_foods_show_html_erb__294774964056834140_70325745158520'
+Started GET "/foods/calculator" for 127.0.0.1 at 2018-07-23 12:48:21 -0400
+Processing by FoodsController#show as HTML
+  Parameters: {"id"=>"calculator"}
+  Rendering foods/show.html.erb within layouts/application
+  [1m[36mFood Load (0.3ms)[0m  [1m[34mSELECT  "foods".* FROM "foods" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /Library/Ruby/Gems/2.3.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendered foods/show.html.erb within layouts/application (7.4ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `to_key' for #<Food::ActiveRecord_Relation:0x007febf40ea5a0>
+Did you mean?  to_query
+               to_set
+               to_ary):
+    1: 
+    2: <%= form_for @foods do |food| %>
+    3: 
+    4: 
+    5: <table class="table table-striped">
+  
+app/views/foods/show.html.erb:2:in `_app_views_foods_show_html_erb__294774964056834140_70325694300980'
+Started GET "/foods/calculator" for 127.0.0.1 at 2018-07-23 12:48:38 -0400
+Processing by FoodsController#show as HTML
+  Parameters: {"id"=>"calculator"}
+  Rendering foods/show.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT  "foods".* FROM "foods" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /Library/Ruby/Gems/2.3.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendered foods/show.html.erb within layouts/application (6.2ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `to_key' for #<Food::ActiveRecord_Relation:0x007febfa0307a8>
+Did you mean?  to_query
+               to_set
+               to_ary):
+    1: 
+    2: <%= form_for @foods do |food| %>
+    3: 
+    4: 
+    5: <table class="table table-striped">
+  
+app/views/foods/show.html.erb:2:in `_app_views_foods_show_html_erb__294774964056834140_70325744258420'
+Started GET "/foods/calculator" for 127.0.0.1 at 2018-07-23 12:48:58 -0400
+Processing by FoodsController#show as HTML
+  Parameters: {"id"=>"calculator"}
+  Rendering foods/show.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT  "foods".* FROM "foods" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /Library/Ruby/Gems/2.3.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendered foods/show.html.erb within layouts/application (6.4ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `to_key' for #<Food::ActiveRecord_Relation:0x007febf7b69e60>
+Did you mean?  to_query
+               to_set
+               to_ary):
+    1: 
+    2: <%= form_for @foods do |food| %>
+    3: 
+    4: 
+    5: <table class="table table-striped">
+  
+app/views/foods/show.html.erb:2:in `_app_views_foods_show_html_erb__294774964056834140_70325724988800'
+Started GET "/foods/calculator" for 127.0.0.1 at 2018-07-23 12:49:18 -0400
+Processing by FoodsController#show as HTML
+  Parameters: {"id"=>"calculator"}
+  Rendering foods/show.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT  "foods".* FROM "foods" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /Library/Ruby/Gems/2.3.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendered foods/show.html.erb within layouts/application (7.8ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `to_key' for #<Food::ActiveRecord_Relation:0x007febf9b977a0>
+Did you mean?  to_query
+               to_set
+               to_ary):
+    1: 
+    2: <%= form_for @foods do |f| %>
+    3: 
+    4: 
+    5: <table class="table table-striped">
+  
+app/views/foods/show.html.erb:2:in `_app_views_foods_show_html_erb__294774964056834140_70325741859500'
+Started GET "/foods/calculator" for 127.0.0.1 at 2018-07-23 12:49:40 -0400
+Processing by FoodsController#show as HTML
+  Parameters: {"id"=>"calculator"}
+  Rendering foods/show.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT  "foods".* FROM "foods" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /Library/Ruby/Gems/2.3.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendered foods/show.html.erb within layouts/application (7.8ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `to_key' for #<Food::ActiveRecord_Relation:0x007febf7a92988>
+Did you mean?  to_query
+               to_set
+               to_ary):
+    1: 
+    2: <%= form_for @foods do |f| %>
+    3: 
+    4: 
+    5: <table class="table table-striped">
+  
+app/views/foods/show.html.erb:2:in `_app_views_foods_show_html_erb__294774964056834140_70325745175820'
+Started GET "/foods/calculator" for 127.0.0.1 at 2018-07-23 12:49:49 -0400
+Processing by FoodsController#show as HTML
+  Parameters: {"id"=>"calculator"}
+  Rendering foods/show.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT  "foods".* FROM "foods" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /Library/Ruby/Gems/2.3.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendered foods/show.html.erb within layouts/application (8.4ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `to_key' for #<Food::ActiveRecord_Relation:0x007febfa0fd118>
+Did you mean?  to_query
+               to_set
+               to_ary):
+    1: 
+    2: <%= form_for @foods do |f| %>
+    3: 
+    4: <% end %>
+    5: 
+  
+app/views/foods/show.html.erb:2:in `_app_views_foods_show_html_erb__294774964056834140_70325697133480'
+Started GET "/foods/calculator" for 127.0.0.1 at 2018-07-23 12:50:08 -0400
+Processing by FoodsController#show as HTML
+  Parameters: {"id"=>"calculator"}
+  Rendering foods/show.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT  "foods".* FROM "foods" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /Library/Ruby/Gems/2.3.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendered foods/show.html.erb within layouts/application (12.1ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `to_key' for #<Food::ActiveRecord_Relation:0x007febf7a0a9c0>
+Did you mean?  to_query
+               to_set
+               to_ary):
+    1: 
+    2: <%= form_for @foods do |f| %>
+    3: 
+    4: <% end %>
+    5: 
+  
+app/views/foods/show.html.erb:2:in `_app_views_foods_show_html_erb__294774964056834140_70325724268320'
+Started GET "/foods/calculator" for 127.0.0.1 at 2018-07-23 12:50:24 -0400
+Processing by FoodsController#show as HTML
+  Parameters: {"id"=>"calculator"}
+  Rendering foods/show.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT  "foods".* FROM "foods" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /Library/Ruby/Gems/2.3.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendered foods/show.html.erb within layouts/application (6.3ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `to_key' for #<Food::ActiveRecord_Relation:0x007febf278c798>
+Did you mean?  to_query
+               to_set
+               to_ary):
+    1: 
+    2: <% form_for @foods do |f| %>
+    3: 
+    4: <% end %>
+    5: 
+  
+app/views/foods/show.html.erb:2:in `_app_views_foods_show_html_erb__294774964056834140_70325746858000'
+Started GET "/foods/calculator" for 127.0.0.1 at 2018-07-23 12:50:27 -0400
+Processing by FoodsController#show as HTML
+  Parameters: {"id"=>"calculator"}
+  Rendering foods/show.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT  "foods".* FROM "foods" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /Library/Ruby/Gems/2.3.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendered foods/show.html.erb within layouts/application (6.5ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `to_key' for #<Food::ActiveRecord_Relation:0x007febfa61f268>
+Did you mean?  to_query
+               to_set
+               to_ary):
+    1: 
+    2: <%= form_for @foods do |f| %>
+    3: 
+    4: <% end %>
+    5: 
+  
+app/views/foods/show.html.erb:2:in `_app_views_foods_show_html_erb__294774964056834140_70325747380240'
+Started GET "/foods/calculator" for 127.0.0.1 at 2018-07-23 12:50:31 -0400
+Processing by FoodsController#show as HTML
+  Parameters: {"id"=>"calculator"}
+  Rendering foods/show.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/show.html.erb:4
+  Rendered foods/show.html.erb within layouts/application (220.2ms)
+Completed 500 Internal Server Error in 226ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x007febf7a08580>:0x007febf9cf7d20>):
+     5: <tr>
+     6: 	<td><%= food.name %></td>
+     7: 	<td>$<span class="price"><%= food.price %></span></td>
+     8: 	<td><%= f.check_box %></td>
+     9: </tr>
+    10: <% end %>
+    11: </table>
+  
+app/views/foods/show.html.erb:8:in `block in _app_views_foods_show_html_erb__294774964056834140_70325726561180'
+app/views/foods/show.html.erb:4:in `_app_views_foods_show_html_erb__294774964056834140_70325726561180'
+Started GET "/foods/calculator" for 127.0.0.1 at 2018-07-23 12:50:42 -0400
+Processing by FoodsController#show as HTML
+  Parameters: {"id"=>"calculator"}
+  Rendering foods/show.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT  "foods".* FROM "foods" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /Library/Ruby/Gems/2.3.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendered foods/show.html.erb within layouts/application (7.2ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `to_key' for #<Food::ActiveRecord_Relation:0x007febf44fd6d8>
+Did you mean?  to_query
+               to_set
+               to_ary):
+    1: 
+    2: <%= form_for @foods do |f| %>
+    3: 
+    4: <% end %>
+    5: 
+  
+app/views/foods/show.html.erb:2:in `_app_views_foods_show_html_erb__294774964056834140_70325740077880'
+Started GET "/foods/calculator" for 127.0.0.1 at 2018-07-23 12:50:46 -0400
+Processing by FoodsController#show as HTML
+  Parameters: {"id"=>"calculator"}
+  Rendering foods/show.html.erb within layouts/application
+  [1m[36mFood Load (0.3ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/show.html.erb:4
+  Rendered foods/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 25ms (Views: 22.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/foods/calculator" for 127.0.0.1 at 2018-07-23 12:51:18 -0400
+Processing by FoodsController#show as HTML
+  Parameters: {"id"=>"calculator"}
+  Rendering foods/show.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT  "foods".* FROM "foods" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /Library/Ruby/Gems/2.3.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendered foods/show.html.erb within layouts/application (6.7ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `to_key' for #<Food::ActiveRecord_Relation:0x007febfc0da710>
+Did you mean?  to_query
+               to_set
+               to_ary):
+    1: 
+    2: <%= form_for @foods do |food| %>
+    3: 
+    4: <% end %>
+    5: 
+  
+app/views/foods/show.html.erb:2:in `_app_views_foods_show_html_erb__294774964056834140_70325761395180'
+Started GET "/foods/calculator" for 127.0.0.1 at 2018-07-23 12:51:26 -0400
+Processing by FoodsController#show as HTML
+  Parameters: {"id"=>"calculator"}
+  Rendering foods/show.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/show.html.erb:4
+  Rendered foods/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 21ms (Views: 19.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/foods/calculator" for 127.0.0.1 at 2018-07-23 12:55:08 -0400
+Processing by FoodsController#show as HTML
+  Parameters: {"id"=>"calculator"}
+  Rendering foods/show.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/show.html.erb:2
+  Rendered foods/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 23ms (Views: 20.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 12:55:12 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:27
+  Rendered foods/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 23ms (Views: 20.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 12:55:52 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:27
+  Rendered foods/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 24ms (Views: 22.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 12:56:09 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.1ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:27
+  Rendered foods/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 19ms (Views: 16.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 12:56:11 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:27
+  Rendered foods/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 26ms (Views: 23.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 12:56:14 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:27
+  Rendered foods/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 26ms (Views: 23.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 12:56:27 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:27
+  Rendered foods/index.html.erb within layouts/application (2.3ms)
+Completed 500 Internal Server Error in 229ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `calculator' for #<#<Class:0x007febf7a08580>:0x007febf46dd890>
+Did you mean?  caller):
+    15:   </head>
+    16: 
+    17:   <body>
+    18:     <%= link_to "test", foods_path(calculator) %>
+    19:     <%= yield %>
+    20:   </body>
+    21: </html>
+  
+app/views/layouts/application.html.erb:18:in `_app_views_layouts_application_html_erb__2560502941046592656_70325697422260'
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 12:56:39 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:27
+  Rendered foods/index.html.erb within layouts/application (3.3ms)
+Completed 500 Internal Server Error in 245ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `calculator_path' for #<#<Class:0x007febf7a08580>:0x007febfc0a00d8>):
+    15:   </head>
+    16: 
+    17:   <body>
+    18:     <%= link_to "test", calculator_path %>
+    19:     <%= yield %>
+    20:   </body>
+    21: </html>
+  
+app/views/layouts/application.html.erb:18:in `_app_views_layouts_application_html_erb__2560502941046592656_70325743297720'
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 12:57:22 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:27
+  Rendered foods/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 28ms (Views: 25.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 12:58:31 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:27
+  Rendered foods/index.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 311ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `calculator' for #<#<Class:0x007febf7a08580>:0x007febf1753bb0>
+Did you mean?  caller):
+    15:   </head>
+    16: 
+    17:   <body>
+    18:     <%= link_to "test", action: calculator %>
+    19:     <%= yield %>
+    20:   </body>
+    21: </html>
+  
+app/views/layouts/application.html.erb:18:in `_app_views_layouts_application_html_erb__2560502941046592656_70325672447300'
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 12:59:09 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:27
+  Rendered foods/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 23ms (Views: 21.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-23 12:59:11 -0400
+Processing by FoodsController#calculator as HTML
+  Rendering foods/calculator.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/calculator.html.erb:2
+  Rendered foods/calculator.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 29ms (Views: 20.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-23 12:59:14 -0400
+Processing by FoodsController#calculator as HTML
+  Rendering foods/calculator.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/calculator.html.erb:2
+  Rendered foods/calculator.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 22ms (Views: 20.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-23 12:59:50 -0400
+Processing by FoodsController#calculator as HTML
+  Rendering foods/calculator.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/calculator.html.erb:2
+  Rendered foods/calculator.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 31ms (Views: 28.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-23 13:00:37 -0400
+Processing by FoodsController#calculator as HTML
+  Rendering foods/calculator.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/calculator.html.erb:2
+  Rendered foods/calculator.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 29ms (Views: 26.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/foods/show" for 127.0.0.1 at 2018-07-23 13:00:39 -0400
+Processing by FoodsController#show as HTML
+  Rendering foods/show.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/show.html.erb:2
+  Rendered foods/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 28ms (Views: 24.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/foods/show" for 127.0.0.1 at 2018-07-23 13:00:54 -0400
+Processing by FoodsController#show as HTML
+  Rendering foods/show.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/show.html.erb:2
+  Rendered foods/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 26ms (Views: 23.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-23 13:00:57 -0400
+Processing by FoodsController#calculator as HTML
+  Rendering foods/calculator.html.erb within layouts/application
+  [1m[36mFood Load (0.3ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/calculator.html.erb:2
+  Rendered foods/calculator.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 25ms (Views: 21.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-23 13:01:01 -0400
+Processing by FoodsController#calculator as HTML
+  Rendering foods/calculator.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/calculator.html.erb:2
+  Rendered foods/calculator.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 24ms (Views: 21.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-23 13:01:28 -0400
+Processing by FoodsController#calculator as HTML
+  Rendering foods/calculator.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/calculator.html.erb:2
+  Rendered foods/calculator.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 22ms (Views: 19.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 13:01:29 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:27
+  Rendered foods/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 26ms (Views: 23.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 13:01:52 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.3ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:27
+  Rendered foods/index.html.erb within layouts/application (3.2ms)
+Completed 500 Internal Server Error in 291ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `root' for #<#<Class:0x007febf7a08580>:0x007febf20144e8>):
+    16: 
+    17:   <body>
+    18:     <%= link_to "Food Options", foods_path %>
+    19:     <%= link_to "Home", root %>
+    20:     <%= yield %>
+    21:   </body>
+    22: </html>
+  
+app/views/layouts/application.html.erb:19:in `_app_views_layouts_application_html_erb__2560502941046592656_70325677156500'
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 13:02:16 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:27
+  Rendered foods/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 22ms (Views: 20.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-23 13:02:18 -0400
+Processing by FoodsController#calculator as HTML
+  Rendering foods/calculator.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/calculator.html.erb:2
+  Rendered foods/calculator.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 24ms (Views: 21.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 13:02:19 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:27
+  Rendered foods/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 36ms (Views: 33.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-23 13:02:19 -0400
+Processing by FoodsController#calculator as HTML
+  Rendering foods/calculator.html.erb within layouts/application
+  [1m[36mFood Load (0.4ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/calculator.html.erb:2
+  Rendered foods/calculator.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 29ms (Views: 25.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-23 13:02:24 -0400
+Processing by FoodsController#calculator as HTML
+  Rendering foods/calculator.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/calculator.html.erb:2
+  Rendered foods/calculator.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 32ms (Views: 28.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 13:04:06 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/foods/index.html.erb:18
+  Rendered foods/index.html.erb within layouts/application (32.8ms)
+Completed 500 Internal Server Error in 40ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `category_id' for #<Food:0x007febf7b750d0>):
+    15: 							<%= f.text_field :price, placeholder: 'Price', class: 'form-control' %>
+    16: 							<br>
+    17: 							<div class="form-group">
+    18: 								<%= f.select :category_id, Category.all.collect {|x| [x.name, x.id]}, {:include_blank => 'Select One'},class:'form-control' %>
+    19: 							</div>
+    20: 							<%= f.submit "Add New", class: 'btn btn-primary' %>
+    21: 							<%=link_to "Cancel", foods_path %>
+  
+app/views/foods/index.html.erb:18:in `block in _app_views_foods_index_html_erb___4397663476194373530_70325749546460'
+app/views/foods/index.html.erb:10:in `_app_views_foods_index_html_erb___4397663476194373530_70325749546460'
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 13:04:06 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/foods/index.html.erb:18
+  Rendered foods/index.html.erb within layouts/application (10.3ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `category_id' for #<Food:0x007febf43267b0>):
+    15: 							<%= f.text_field :price, placeholder: 'Price', class: 'form-control' %>
+    16: 							<br>
+    17: 							<div class="form-group">
+    18: 								<%= f.select :category_id, Category.all.collect {|x| [x.name, x.id]}, {:include_blank => 'Select One'},class:'form-control' %>
+    19: 							</div>
+    20: 							<%= f.submit "Add New", class: 'btn btn-primary' %>
+    21: 							<%=link_to "Cancel", foods_path %>
+  
+app/views/foods/index.html.erb:18:in `block in _app_views_foods_index_html_erb___4397663476194373530_70325695488700'
+app/views/foods/index.html.erb:10:in `_app_views_foods_index_html_erb___4397663476194373530_70325695488700'
+Started GET "/categories" for 127.0.0.1 at 2018-07-23 13:04:27 -0400
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/categories/index.html.erb:4
+  Rendered categories/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 20ms (Views: 18.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2018-07-23 13:05:03 -0400
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/categories/index.html.erb:4
+  Rendered categories/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 35ms (Views: 30.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 13:05:06 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/foods/index.html.erb:18
+  Rendered foods/index.html.erb within layouts/application (14.2ms)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `category_id' for #<Food:0x007febfc049cb0>):
+    15: 							<%= f.text_field :price, placeholder: 'Price', class: 'form-control' %>
+    16: 							<br>
+    17: 							<div class="form-group">
+    18: 								<%= f.select :category_id, Category.all.collect {|x| [x.name, x.id]}, {:include_blank => 'Select One'},class:'form-control' %>
+    19: 							</div>
+    20: 							<%= f.submit "Add New", class: 'btn btn-primary' %>
+    21: 							<%=link_to "Cancel", foods_path %>
+  
+app/views/foods/index.html.erb:18:in `block in _app_views_foods_index_html_erb___4397663476194373530_70325742970480'
+app/views/foods/index.html.erb:10:in `_app_views_foods_index_html_erb___4397663476194373530_70325742970480'
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 13:05:08 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/foods/index.html.erb:18
+  Rendered foods/index.html.erb within layouts/application (9.8ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `category_id' for #<Food:0x007febfac7bbe8>):
+    15: 							<%= f.text_field :price, placeholder: 'Price', class: 'form-control' %>
+    16: 							<br>
+    17: 							<div class="form-group">
+    18: 								<%= f.select :category_id, Category.all.collect {|x| [x.name, x.id]}, {:include_blank => 'Select One'},class:'form-control' %>
+    19: 							</div>
+    20: 							<%= f.submit "Add New", class: 'btn btn-primary' %>
+    21: 							<%=link_to "Cancel", foods_path %>
+  
+app/views/foods/index.html.erb:18:in `block in _app_views_foods_index_html_erb___4397663476194373530_70325750714900'
+app/views/foods/index.html.erb:10:in `_app_views_foods_index_html_erb___4397663476194373530_70325750714900'
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 13:06:11 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/foods/index.html.erb:18
+  Rendered foods/index.html.erb within layouts/application (14.8ms)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 1.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `category_id' for #<Food:0x007febf781b3f8>
+Did you mean?  categories):
+    15: 							<%= f.text_field :price, placeholder: 'Price', class: 'form-control' %>
+    16: 							<br>
+    17: 							<div class="form-group">
+    18: 								<%= f.select :category_id, Category.all.collect {|x| [x.name, x.id]}, {:include_blank => 'Select One'},class:'form-control' %>
+    19: 							</div>
+    20: 							<%= f.submit "Add New", class: 'btn btn-primary' %>
+    21: 							<%=link_to "Cancel", foods_path %>
+  
+app/views/foods/index.html.erb:18:in `block in _app_views_foods_index_html_erb___4397663476194373530_70325694434780'
+app/views/foods/index.html.erb:10:in `_app_views_foods_index_html_erb___4397663476194373530_70325694434780'
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 13:07:39 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/foods/index.html.erb:18
+  Rendered foods/index.html.erb within layouts/application (14.5ms)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 1.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `category_id' for #<Food:0x007febf9f43bb0>
+Did you mean?  categories):
+    15: 							<%= f.text_field :price, placeholder: 'Price', class: 'form-control' %>
+    16: 							<br>
+    17: 							<div class="form-group">
+    18: 								<%= f.select :category_id, Category.all.collect {|x| [x.name, x.id]}, {:include_blank => 'Select One'},class:'form-control' %>
+    19: 							</div>
+    20: 							<%= f.submit "Add New", class: 'btn btn-primary' %>
+    21: 							<%=link_to "Cancel", foods_path %>
+  
+app/views/foods/index.html.erb:18:in `block in _app_views_foods_index_html_erb___4397663476194373530_70325726117000'
+app/views/foods/index.html.erb:10:in `_app_views_foods_index_html_erb___4397663476194373530_70325726117000'
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 13:08:37 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/foods/index.html.erb:18
+  Rendered foods/index.html.erb within layouts/application (14.3ms)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 1.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `category_id' for #<Food:0x007febf461fed0>
+Did you mean?  categories):
+    15: 							<%= f.text_field :price, placeholder: 'Price', class: 'form-control' %>
+    16: 							<br>
+    17: 							<div class="form-group">
+    18: 								<%= f.select :category_id, Category.all.collect {|x| [x.name, x.id]}, {:include_blank => 'Select One'},class:'form-control' %>
+    19: 							</div>
+    20: 							<%= f.submit "Add New", class: 'btn btn-primary' %>
+    21: 							<%=link_to "Cancel", foods_path %>
+  
+app/views/foods/index.html.erb:18:in `block in _app_views_foods_index_html_erb___4397663476194373530_70325724072860'
+app/views/foods/index.html.erb:10:in `_app_views_foods_index_html_erb___4397663476194373530_70325724072860'
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 13:09:47 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/foods/index.html.erb:18
+  Rendered foods/index.html.erb within layouts/application (14.6ms)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 1.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `category_id' for #<Food:0x007febf7bfe470>
+Did you mean?  categories):
+    15: 							<%= f.text_field :price, placeholder: 'Price', class: 'form-control' %>
+    16: 							<br>
+    17: 							<div class="form-group">
+    18: 								<%= f.select :category_id, Category.all.collect {|x| [x.name, x.id]}, {:include_blank => 'Select One'},class:'form-control' %>
+    19: 							</div>
+    20: 							<%= f.submit "Add New", class: 'btn btn-primary' %>
+    21: 							<%=link_to "Cancel", foods_path %>
+  
+app/views/foods/index.html.erb:18:in `block in _app_views_foods_index_html_erb___4397663476194373530_70325749280300'
+app/views/foods/index.html.erb:10:in `_app_views_foods_index_html_erb___4397663476194373530_70325749280300'
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 13:10:16 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/foods/index.html.erb:18
+  Rendered foods/index.html.erb within layouts/application (15.5ms)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 1.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `category_id' for #<Food:0x007febf47068f8>
+Did you mean?  categories):
+    15: 							<%= f.text_field :price, placeholder: 'Price', class: 'form-control' %>
+    16: 							<br>
+    17: 							<div class="form-group">
+    18: 								<%= f.select :category_id, Category.all.collect {|x| [x.name, x.id]}, {:include_blank => 'Select One'},class:'form-control' %>
+    19: 							</div>
+    20: 							<%= f.submit "Add New", class: 'btn btn-primary' %>
+    21: 							<%=link_to "Cancel", foods_path %>
+  
+app/views/foods/index.html.erb:18:in `block in _app_views_foods_index_html_erb___4397663476194373530_70325740964300'
+app/views/foods/index.html.erb:10:in `_app_views_foods_index_html_erb___4397663476194373530_70325740964300'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:4
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bin/rake:22
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 13:11:54 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Library/Ruby/Gems/2.3.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/foods/index.html.erb:18
+  Rendered foods/index.html.erb within layouts/application (24.1ms)
+Completed 500 Internal Server Error in 68ms (ActiveRecord: 1.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `category_id' for #<Food:0x007ff8bd3620c8>
+Did you mean?  categories):
+    15: 							<%= f.text_field :price, placeholder: 'Price', class: 'form-control' %>
+    16: 							<br>
+    17: 							<div class="form-group">
+    18: 								<%= f.select :category_id, Category.all.collect {|x| [x.name, x.id]}, {:include_blank => 'Select One'},class:'form-control' %>
+    19: 							</div>
+    20: 							<%= f.submit "Add New", class: 'btn btn-primary' %>
+    21: 							<%=link_to "Cancel", foods_path %>
+  
+app/views/foods/index.html.erb:18:in `block in _app_views_foods_index_html_erb__2483443067256133263_70353145535440'
+app/views/foods/index.html.erb:10:in `_app_views_foods_index_html_erb__2483443067256133263_70353145535440'
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 13:11:55 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/foods/index.html.erb:18
+  Rendered foods/index.html.erb within layouts/application (33.4ms)
+Completed 500 Internal Server Error in 144ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `category_id' for #<Food:0x007ff8be2856b8>
+Did you mean?  categories):
+    15: 							<%= f.text_field :price, placeholder: 'Price', class: 'form-control' %>
+    16: 							<br>
+    17: 							<div class="form-group">
+    18: 								<%= f.select :category_id, Category.all.collect {|x| [x.name, x.id]}, {:include_blank => 'Select One'},class:'form-control' %>
+    19: 							</div>
+    20: 							<%= f.submit "Add New", class: 'btn btn-primary' %>
+    21: 							<%=link_to "Cancel", foods_path %>
+  
+app/views/foods/index.html.erb:18:in `block in _app_views_foods_index_html_erb__2483443067256133263_70353159453340'
+app/views/foods/index.html.erb:10:in `_app_views_foods_index_html_erb__2483443067256133263_70353159453340'
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 13:16:14 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Library/Ruby/Gems/2.3.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.0) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.0) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.0) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bin/rake:22
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 13:16:41 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Library/Ruby/Gems/2.3.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/foods/index.html.erb:18
+  Rendered foods/index.html.erb within layouts/application (19.4ms)
+Completed 500 Internal Server Error in 70ms (ActiveRecord: 1.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `category_id' for #<Food:0x007f85830165e8>
+Did you mean?  categories):
+    15: 							<%= f.text_field :price, placeholder: 'Price', class: 'form-control' %>
+    16: 							<br>
+    17: 							<div class="form-group">
+    18: 								<%= f.select :category_id, Category.all.collect {|x| [x.name, x.id]}, {:include_blank => 'Select One'},class:'form-control' %>
+    19: 							</div>
+    20: 							<%= f.submit "Add New", class: 'btn btn-primary' %>
+    21: 							<%=link_to "Cancel", foods_path %>
+  
+app/views/foods/index.html.erb:18:in `block in _app_views_foods_index_html_erb__1256801536132042014_70105702674480'
+app/views/foods/index.html.erb:10:in `_app_views_foods_index_html_erb__1256801536132042014_70105702674480'
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 13:17:36 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/foods/index.html.erb:18
+  Rendered foods/index.html.erb within layouts/application (10.2ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `category_id' for #<Food:0x007f8581d14418>
+Did you mean?  categories):
+    15: 							<%= f.text_field :price, placeholder: 'Price', class: 'form-control' %>
+    16: 							<br>
+    17: 							<div class="form-group">
+    18: 								<%= f.select :category_id, Category.all.collect {|x| [x.name, x.id]}, {:include_blank => 'Select One'},class:'form-control' %>
+    19: 							</div>
+    20: 							<%= f.submit "Add New", class: 'btn btn-primary' %>
+    21: 							<%=link_to "Cancel", foods_path %>
+  
+app/views/foods/index.html.erb:18:in `block in _app_views_foods_index_html_erb__1256801536132042014_70105692663640'
+app/views/foods/index.html.erb:10:in `_app_views_foods_index_html_erb__1256801536132042014_70105692663640'
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 13:18:57 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/foods/index.html.erb:18
+  Rendered foods/index.html.erb within layouts/application (13.9ms)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 1.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `category_id' for #<Food:0x007f8581a3ec70>
+Did you mean?  categories):
+    15: 							<%= f.text_field :price, placeholder: 'Price', class: 'form-control' %>
+    16: 							<br>
+    17: 							<div class="form-group">
+    18: 								<%= f.select :category_id, Category.all.collect {|x| [x.name, x.id]}, {:include_blank => 'Select One'},class:'form-control' %>
+    19: 							</div>
+    20: 							<%= f.submit "Add New", class: 'btn btn-primary' %>
+    21: 							<%=link_to "Cancel", foods_path %>
+  
+app/views/foods/index.html.erb:18:in `block in _app_views_foods_index_html_erb__1256801536132042014_70105702625820'
+app/views/foods/index.html.erb:10:in `_app_views_foods_index_html_erb__1256801536132042014_70105702625820'
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 13:19:21 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:28
+  Rendered foods/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 213ms (Views: 211.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-23 13:19:23 -0400
+Processing by FoodsController#calculator as HTML
+  Rendering foods/calculator.html.erb within layouts/application
+  [1m[36mFood Load (0.3ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/calculator.html.erb:2
+  Rendered foods/calculator.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 25ms (Views: 22.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 13:19:24 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:28
+  Rendered foods/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 27ms (Views: 24.5ms | ActiveRecord: 0.2ms)
+
+
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Create (0.5ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Test"], ["created_at", "2018-07-23 17:21:42.466151"], ["updated_at", "2018-07-23 17:21:42.466151"]]
+  [1m[35m (6.2ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 13:21:53 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Library/Ruby/Gems/2.3.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/foods/index.html.erb:18
+  Rendered foods/index.html.erb within layouts/application (19.9ms)
+Completed 500 Internal Server Error in 71ms (ActiveRecord: 1.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `category_id' for #<Food:0x007fb2e45abb78>
+Did you mean?  categories):
+    15: 							<%= f.text_field :price, placeholder: 'Price', class: 'form-control' %>
+    16: 							<br>
+    17: 							<div class="form-group">
+    18: 								<%= f.select :category_id, Category.all.collect {|x| [x.name, x.id]}, {:include_blank => 'Select One'},class:'form-control' %>
+    19: 							</div>
+    20: 							<%= f.submit "Add New", class: 'btn btn-primary' %>
+    21: 							<%=link_to "Cancel", foods_path %>
+  
+app/views/foods/index.html.erb:18:in `block in _app_views_foods_index_html_erb__4440158703818205340_70203156045380'
+app/views/foods/index.html.erb:10:in `_app_views_foods_index_html_erb__4440158703818205340_70203156045380'
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 13:21:57 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/foods/index.html.erb:18
+  Rendered foods/index.html.erb within layouts/application (10.5ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `category_id' for #<Food:0x007fb2e4639c48>
+Did you mean?  categories):
+    15: 							<%= f.text_field :price, placeholder: 'Price', class: 'form-control' %>
+    16: 							<br>
+    17: 							<div class="form-group">
+    18: 								<%= f.select :category_id, Category.all.collect {|x| [x.name, x.id]}, {:include_blank => 'Select One'},class:'form-control' %>
+    19: 							</div>
+    20: 							<%= f.submit "Add New", class: 'btn btn-primary' %>
+    21: 							<%=link_to "Cancel", foods_path %>
+  
+app/views/foods/index.html.erb:18:in `block in _app_views_foods_index_html_erb__4440158703818205340_70203156316500'
+app/views/foods/index.html.erb:10:in `_app_views_foods_index_html_erb__4440158703818205340_70203156316500'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:4
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bin/rake:22
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 13:26:50 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Library/Ruby/Gems/2.3.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/foods/index.html.erb:18
+  Rendered foods/index.html.erb within layouts/application (21.0ms)
+Completed 500 Internal Server Error in 69ms (ActiveRecord: 1.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `category_id' for #<Food:0x007fa636560e08>
+Did you mean?  categories):
+    15: 							<%= f.text_field :price, placeholder: 'Price', class: 'form-control' %>
+    16: 							<br>
+    17: 							<div class="form-group">
+    18: 								<%= f.select :category_id, Category.all.collect {|x| [x.name, x.id]}, {:include_blank => 'Select One'},class:'form-control' %>
+    19: 							</div>
+    20: 							<%= f.submit "Add New", class: 'btn btn-primary' %>
+    21: 							<%=link_to "Cancel", foods_path %>
+  
+app/views/foods/index.html.erb:18:in `block in _app_views_foods_index_html_erb__3223752907587397891_70175937390560'
+app/views/foods/index.html.erb:10:in `_app_views_foods_index_html_erb__3223752907587397891_70175937390560'
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 13:28:38 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/foods/index.html.erb:18
+  Rendered foods/index.html.erb within layouts/application (14.8ms)
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 1.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `category_id' for #<Food:0x007fa63528a180>
+Did you mean?  category
+               category=):
+    15: 							<%= f.text_field :price, placeholder: 'Price', class: 'form-control' %>
+    16: 							<br>
+    17: 							<div class="form-group">
+    18: 								<%= f.select :category_id, Category.all.collect {|x| [x.name, x.id]}, {:include_blank => 'Select One'},class:'form-control' %>
+    19: 							</div>
+    20: 							<%= f.submit "Add New", class: 'btn btn-primary' %>
+    21: 							<%=link_to "Cancel", foods_path %>
+  
+app/views/foods/index.html.erb:18:in `block in _app_views_foods_index_html_erb__3223752907587397891_70175921828760'
+app/views/foods/index.html.erb:10:in `_app_views_foods_index_html_erb__3223752907587397891_70175921828760'
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 13:29:25 -0400
+Processing by FoodsController#index as HTML
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant ApplicationRecord::Base):
+  
+app/models/food.rb:1:in `<main>'
+app/controllers/foods_controller.rb:13:in `index'
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 13:30:43 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/foods/index.html.erb:18
+  Rendered foods/index.html.erb within layouts/application (9.2ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 1.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `category_id' for #<Food:0x007fa6353c75e8>
+Did you mean?  category
+               category=):
+    15: 							<%= f.text_field :price, placeholder: 'Price', class: 'form-control' %>
+    16: 							<br>
+    17: 							<div class="form-group">
+    18: 								<%= f.select :category_id, Category.all.collect {|x| [x.name, x.id]}, {:include_blank => 'Select One'},class:'form-control' %>
+    19: 							</div>
+    20: 							<%= f.submit "Add New", class: 'btn btn-primary' %>
+    21: 							<%=link_to "Cancel", foods_path %>
+  
+app/views/foods/index.html.erb:18:in `block in _app_views_foods_index_html_erb__3223752907587397891_70175937673200'
+app/views/foods/index.html.erb:10:in `_app_views_foods_index_html_erb__3223752907587397891_70175937673200'
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 13:57:35 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/foods/index.html.erb:18
+  Rendered foods/index.html.erb within layouts/application (10.6ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `category_id' for #<Food:0x007fa63d9025a0>
+Did you mean?  category
+               category=):
+    15: 							<%= f.text_field :price, placeholder: 'Price', class: 'form-control' %>
+    16: 							<br>
+    17: 							<div class="form-group">
+    18: 								<%= f.select :category_id, Category.all.collect {|x| [x.name, x.id]}, {:include_blank => 'Select One'},class:'form-control' %>
+    19: 							</div>
+    20: 							<%= f.submit "Add New", class: 'btn btn-primary' %>
+    21: 							<%=link_to "Cancel", foods_path %>
+  
+app/views/foods/index.html.erb:18:in `block in _app_views_foods_index_html_erb__3223752907587397891_70175987074680'
+app/views/foods/index.html.erb:10:in `_app_views_foods_index_html_erb__3223752907587397891_70175987074680'
+Started GET "/categories" for 127.0.0.1 at 2018-07-23 13:58:41 -0400
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/categories/index.html.erb:4
+  Rendered categories/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 190ms (Views: 188.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 13:58:44 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/foods/index.html.erb:18
+  Rendered foods/index.html.erb within layouts/application (11.3ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `category_id' for #<Food:0x007fa63980ce60>
+Did you mean?  category
+               category=):
+    15: 							<%= f.text_field :price, placeholder: 'Price', class: 'form-control' %>
+    16: 							<br>
+    17: 							<div class="form-group">
+    18: 								<%= f.select :category_id, Category.all.collect {|x| [x.name, x.id]}, {:include_blank => 'Select One'},class:'form-control' %>
+    19: 							</div>
+    20: 							<%= f.submit "Add New", class: 'btn btn-primary' %>
+    21: 							<%=link_to "Cancel", foods_path %>
+  
+app/views/foods/index.html.erb:18:in `block in _app_views_foods_index_html_erb__3223752907587397891_70175927496440'
+app/views/foods/index.html.erb:10:in `_app_views_foods_index_html_erb__3223752907587397891_70175927496440'
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 14:02:35 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/foods/index.html.erb:18
+  Rendered foods/index.html.erb within layouts/application (11.2ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `category_id' for #<Food:0x007fa637cec518>
+Did you mean?  category
+               category=):
+    15: 							<%= f.text_field :price, placeholder: 'Price', class: 'form-control' %>
+    16: 							<br>
+    17: 							<div class="form-group">
+    18: 								<%= f.select :category_id, Category.all.collect {|x| [x.name, x.id]}, {:include_blank => 'Select One'},class:'form-control' %>
+    19: 							</div>
+    20: 							<%= f.submit "Add New", class: 'btn btn-primary' %>
+    21: 							<%=link_to "Cancel", foods_path %>
+  
+app/views/foods/index.html.erb:18:in `block in _app_views_foods_index_html_erb__3223752907587397891_70175938765700'
+app/views/foods/index.html.erb:10:in `_app_views_foods_index_html_erb__3223752907587397891_70175938765700'
+Started GET "/categories" for 127.0.0.1 at 2018-07-23 14:02:37 -0400
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/categories/index.html.erb:4
+  Rendered categories/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 32ms (Views: 28.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/categories/new" for 127.0.0.1 at 2018-07-23 14:02:40 -0400
+Processing by CategoriesController#new as HTML
+  Rendering categories/new.html.erb within layouts/application
+  Rendered categories/new.html.erb within layouts/application (2.3ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <%= form_for @category do |f| %>
+    2: 						
+    3: <div class="form-group">
+    4: 	<%= f.text_field :name, placeholder: 'Category Name', class: 'form-control' %>
+  
+app/views/categories/new.html.erb:1:in `_app_views_categories_new_html_erb__365899665089590013_70175984346460'
+Started GET "/categories/new" for 127.0.0.1 at 2018-07-23 14:04:37 -0400
+Processing by CategoriesController#new as HTML
+  Rendering categories/new.html.erb within layouts/application
+  Rendered categories/new.html.erb within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <%= form_for @category do |f| %>
+    2: 						
+    3: <div class="form-group">
+    4: 	<%= f.text_field :name, placeholder: 'Category Name', class: 'form-control' %>
+  
+app/views/categories/new.html.erb:1:in `_app_views_categories_new_html_erb__365899665089590013_70175987848780'
+Started GET "/categories/new" for 127.0.0.1 at 2018-07-23 14:04:46 -0400
+Processing by CategoriesController#new as HTML
+  Rendering categories/new.html.erb within layouts/application
+  Rendered categories/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 37ms (Views: 21.3ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/categories" for 127.0.0.1 at 2018-07-23 14:04:52 -0400
+Processing by CategoriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VFyn2tBVJDCYv7tSr3k94xmDH14dSxitQ/HpwM6wrOdKwQwqWpCGaj/ulffjW1XKSOa0eA2f7xFuLDOotqAd0w==", "category"=>{"name"=>"Food Cat"}, "commit"=>"Add New"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/categories_controller.rb:9
+  [1m[36mCategory Create (1.0ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Food Cat"], ["created_at", "2018-07-23 18:04:52.429408"], ["updated_at", "2018-07-23 18:04:52.429408"]]
+  ↳ app/controllers/categories_controller.rb:9
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/categories_controller.rb:9
+Redirected to http://localhost:3000/categories
+Completed 302 Found in 7ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2018-07-23 14:04:52 -0400
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/categories/index.html.erb:4
+  Rendered categories/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 27ms (Views: 25.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 14:04:58 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/foods/index.html.erb:18
+  Rendered foods/index.html.erb within layouts/application (11.3ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `category_id' for #<Food:0x007fa637f65448>
+Did you mean?  category
+               category=):
+    15: 							<%= f.text_field :price, placeholder: 'Price', class: 'form-control' %>
+    16: 							<br>
+    17: 							<div class="form-group">
+    18: 								<%= f.select :category_id, Category.all.collect {|x| [x.name, x.id]}, {:include_blank => 'Select One'},class:'form-control' %>
+    19: 							</div>
+    20: 							<%= f.submit "Add New", class: 'btn btn-primary' %>
+    21: 							<%=link_to "Cancel", foods_path %>
+  
+app/views/foods/index.html.erb:18:in `block in _app_views_foods_index_html_erb__3223752907587397891_70175984139600'
+app/views/foods/index.html.erb:10:in `_app_views_foods_index_html_erb__3223752907587397891_70175984139600'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bin/rake:22
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 14:08:00 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Library/Ruby/Gems/2.3.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/foods/index.html.erb:18
+  Rendered foods/index.html.erb within layouts/application (20.0ms)
+Completed 500 Internal Server Error in 71ms (ActiveRecord: 1.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `category_id' for #<Food:0x007fbe3afa0d48>
+Did you mean?  category
+               category=):
+    15: 							<%= f.text_field :price, placeholder: 'Price', class: 'form-control' %>
+    16: 							<br>
+    17: 							<div class="form-group">
+    18: 								<%= f.select :category_id, Category.all.collect {|x| [x.name, x.id]}, {:include_blank => 'Select One'},class:'form-control' %>
+    19: 							</div>
+    20: 							<%= f.submit "Add New", class: 'btn btn-primary' %>
+    21: 							<%=link_to "Cancel", foods_path %>
+  
+app/views/foods/index.html.erb:18:in `block in _app_views_foods_index_html_erb__392691844752123291_70227534555300'
+app/views/foods/index.html.erb:10:in `_app_views_foods_index_html_erb__392691844752123291_70227534555300'
+Started GET "/foods" for 127.0.0.1 at 2018-07-23 14:11:22 -0400
+Processing by FoodsController#index as HTML
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/foods/index.html.erb:18
+  Rendered foods/index.html.erb within layouts/application (10.2ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `category_id' for #<Food:0x007fbe3a6dd120>
+Did you mean?  category
+               category=):
+    15: 							<%= f.text_field :price, placeholder: 'Price', class: 'form-control' %>
+    16: 							<br>
+    17: 							<div class="form-group">
+    18: 								<%= f.select :category_id, Category.all.collect {|x| [x.name, x.id]}, {:include_blank => 'Select One'},class:'form-control' %>
+    19: 							</div>
+    20: 							<%= f.submit "Add New", class: 'btn btn-primary' %>
+    21: 							<%=link_to "Cancel", foods_path %>
+  
+app/views/foods/index.html.erb:18:in `block in _app_views_foods_index_html_erb__392691844752123291_70227534739700'
+app/views/foods/index.html.erb:10:in `_app_views_foods_index_html_erb__392691844752123291_70227534739700'
+  [1m[36mFood Load (0.5ms)[0m  [1m[34mSELECT  "foods".* FROM "foods" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" LIMIT ?[0m  [["LIMIT", 11]]

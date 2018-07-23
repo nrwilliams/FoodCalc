@@ -1,0 +1,8 @@
+<table class="table table-striped">
+<% @foods.each do |food| %>
+<tr>
+	<td><%= food.name %></td>
+	<td>$<span class="price"><%= food.price %></span></td>
+</tr>
+<% end %>
+</table>
