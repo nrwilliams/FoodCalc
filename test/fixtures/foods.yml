@@ -2,8 +2,10 @@
 
 one:
   name: MyString
+  category_id: 1
   price: 9.99
 
 two:
   name: MyString
+  category_id: 1
   price: 9.99
