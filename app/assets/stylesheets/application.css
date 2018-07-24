@@ -14,6 +14,44 @@
  *= require_self
  */
 
+ /* MAIN CSS */
+ body {font-family: 'lato' !important;}
+
+ .navbar {
+ 	background: #3e90d6 !important;
+ 	color:#fff;
+ 	font-family: 'lato';
+ 	margin-bottom:20px;
+ }
+ .navbar .navbar-nav a {
+ 	color:#fff;
+ 	text-transform:uppercase;
+    font-size: .8rem;
+ }
+ .navbar-brand {
+ 	font-weight:bold;
+ 	color:#fff;
+ 	text-transform: inherit;
+ }
+
+ /* CSS for CALCULATOR PAGE */
+ .calc-intro {
+ 	text-align:center;
+ }
+ .people-slider-number {
+ 	position:relative;
+ 	margin-left:-1px;
+ }
+ .people-icon {
+font-size: 1.5rem;
+    position: absolute;
+    left: -73px;
+    top: 8px;
+    color: #3e90d6;
+    right: 0;
+    margin: 0 auto;
+ }
+
 .food-item {
     width: 70px;
     height: 70px;
@@ -40,8 +78,8 @@
   position: absolute;
   margin: -6px 0 0 -17px;
   border-radius: 100px;
-  background: #158789;
-  color: #158789;
+  background: #3e90d6;
+  color: #3e90d6;
   border: 0;
   height: 20px;
   line-height: 20px;
@@ -76,7 +114,6 @@
 .ui-slider-handle {
     font-size: 4rem;
     font-weight: bold;
-    font-family: monospace;
     letter-spacing: -4px;
-  	color: #158789;
+  	color: #3e90d6;
 }
