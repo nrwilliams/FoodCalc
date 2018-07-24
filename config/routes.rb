@@ -15,6 +15,7 @@ Rails.application.routes.draw do
   get 'foods/edit'
   get 'foods/calculator'
 
+  root 'foods#calculator'
 
   resources :foods
   resources :categories

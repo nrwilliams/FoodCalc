@@ -3,6 +3,7 @@
 		<div class="col-md-12">
 
 			<h2>How many people?</h2>
+			<input type="text" class="number-of-people">
 
 
 			<h3>Select your entres:</h3>
@@ -10,36 +11,36 @@
 			<% @foods.each do |food| %>
 				<% if food.category.name == "Entree" %>
 					<div class="food-item">
-						<input type="checkbox">
 						<%= food.name %>
 						$<span class="price"><%= food.price %></span>
-						<input type="text" class="hidden">
+						<input type="hidden" class="hidden">
 					</div>
 				<% end %>
 			<% end %>
 			</div>
 
 			<h3>Select your Dessert:</h3>
-			<div class="category">
 			<% @foods.each do |food| %>
 				<% if food.category.name == "Dessert" %>
 					<div class="food-item">
-						<input type="checkbox" class="input">
 						<%= food.name %>
 						$<span class="price"><%= food.price %></span>
-						<input type="text" class="hidden">
+						<input type="hidden" class="hidden">
 					</div>
 				<% end %>
 			<% end %>
-			</div>
 
 			<h3>Select your sides:</h3>
 			<% @foods.each do |food| %>
 				<% if food.category.name == "Side" %>
-					<%= food.name %>
-					$<span class="price"><%= food.price %></span>
+					<div class="food-item">
+						<%= food.name %>
+						$<span class="price"><%= food.price %></span>
+						<input type="hidden" class="hidden">
+					</div>
 				<% end %>
 			<% end %>
+
 			<button class="calculate">GET TOTAL</button>
 			<input type="text" class="selected-total">
 
@@ -49,9 +50,9 @@
 
 <script>
 jQuery('.food-item').on('click', function() {
-	jQuery(this).toggleClass('test');
+	jQuery(this).toggleClass('food-item-active');
 	var price = jQuery(this).find('span').html();
-	if(jQuery(this).hasClass('test')) {
+	if(jQuery(this).hasClass('food-item-active')) {
 		jQuery(this).find('.hidden').val(price);
 	}	else {
 		jQuery(this).find('.hidden').val('');
@@ -60,7 +61,7 @@ jQuery('.food-item').on('click', function() {
 });
 
 jQuery('.calculate').on('click', function() {
-
+	var people = jQuery('.number-of-people').val();
  	var sum = 0;
 
 	jQuery('.hidden').each(function() {
@@ -69,7 +70,7 @@ jQuery('.calculate').on('click', function() {
 
 	var totalDecimal = (sum).toFixed(2);
 
-	jQuery(".selected-total").val(totalDecimal);
+	jQuery(".selected-total").val(totalDecimal * people);
 
 });
 </script>

@@ -13,7 +13,17 @@
  *= require_tree .
  *= require_self
  */
-.test {
-	color: red;
+
+.food-item {
+    width: 70px;
+    height: 70px;
+    background: #efefef;
+    display: inline-block;
+    border-radius: 100%;
+    line-height: 20px;
+    text-align: center;
+    transition: all ease .5s;
+}
+.food-item-active {
 	background:#333;
 }
