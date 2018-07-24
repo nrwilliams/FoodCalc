@@ -41,7 +41,9 @@ class FoodsController < ApplicationController
 
   def calculator
     @foods = Food.all
+    @categories = Category.all
   end
+
 
   private
   def food_params
