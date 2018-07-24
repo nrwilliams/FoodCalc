@@ -1,18 +1,20 @@
-<div class="container">
+<div class="hero"></div>
+
+<div class="party-intro">
+	<h2>Party Size?</h2>
+	<div class="people-slider-number">
+		<i class="far fa-user-circle people-icon"></i> 
+		<div class="ui-slider-handle"></div>
+	</div>
+
+	<div class="cntr range-slider" id="range"></div>
+
+</div>
+
+<div class="container food">
 
 	<div class="row">
-		<div class="col-md-3 calc-intro">
-
-			<h2>Party Size?</h2>
-			<div class="people-slider-number">
-				<i class="far fa-user-circle people-icon"></i> 
-				<div class="ui-slider-handle"></div>
-			</div>
-
-			<div class="cntr range-slider" id="range"></div>
-
-		</div>
-		<div class="col-md-3">
+		<div class="col-md-4">
 
 			<h3>Select your entrees:</h3>
 			<div class="category">
@@ -27,7 +29,7 @@
 			<% end %>
 			</div>
 		</div>
-		<div class="col-md-3">
+		<div class="col-md-4">
 
 			<h3>Select your Sides:</h3>
 			<% @foods.each do |food| %>
@@ -41,7 +43,7 @@
 			<% end %>
 		</div>
 
-		<div class="col-md-3">
+		<div class="col-md-4">
 
 			<h3>Select your Dessert:</h3>
 			<% @foods.each do |food| %>
