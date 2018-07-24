@@ -13,8 +13,8 @@ Rails.application.routes.draw do
   get 'foods/update'
   get 'foods/destroy'
   get 'foods/edit'
+  get 'foods/calculator'
 
-  root 'foods#calculator'
 
   resources :foods
   resources :categories

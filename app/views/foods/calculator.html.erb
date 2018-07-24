@@ -5,29 +5,71 @@
 			<h2>How many people?</h2>
 
 
-
 			<h3>Select your entres:</h3>
+			<div class="category">
 			<% @foods.each do |food| %>
 				<% if food.category.name == "Entree" %>
-					<%= food.name %>
-					<%= food.price %>
+					<div class="food-item">
+						<input type="checkbox">
+						<%= food.name %>
+						$<span class="price"><%= food.price %></span>
+						<input type="text" class="hidden">
+					</div>
 				<% end %>
 			<% end %>
+			</div>
 
 			<h3>Select your Dessert:</h3>
+			<div class="category">
 			<% @foods.each do |food| %>
 				<% if food.category.name == "Dessert" %>
-					<%= food.name %>
+					<div class="food-item">
+						<input type="checkbox" class="input">
+						<%= food.name %>
+						$<span class="price"><%= food.price %></span>
+						<input type="text" class="hidden">
+					</div>
 				<% end %>
 			<% end %>
+			</div>
 
 			<h3>Select your sides:</h3>
 			<% @foods.each do |food| %>
 				<% if food.category.name == "Side" %>
 					<%= food.name %>
+					$<span class="price"><%= food.price %></span>
 				<% end %>
 			<% end %>
+			<button class="calculate">GET TOTAL</button>
+			<input type="text" class="selected-total">
 
 		</div>
 	</div>
 </div>
+
+<script>
+jQuery('.food-item').on('click', function() {
+	jQuery(this).toggleClass('test');
+	var price = jQuery(this).find('span').html();
+	if(jQuery(this).hasClass('test')) {
+		jQuery(this).find('.hidden').val(price);
+	}	else {
+		jQuery(this).find('.hidden').val('');
+	}
+
+});
+
+jQuery('.calculate').on('click', function() {
+
+ 	var sum = 0;
+
+	jQuery('.hidden').each(function() {
+		sum += +jQuery(this).val();
+	});
+
+	var totalDecimal = (sum).toFixed(2);
+
+	jQuery(".selected-total").val(totalDecimal);
+
+});
+</script>

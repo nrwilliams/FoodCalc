@@ -1,56 +1,32 @@
-
 <div class="container">
 	<div class="row">
 		<div class="col-md-12">
 
-			<h1>Foods</h1>
-
-			<div class="row">
-				<div class="col-md-4">
-					<h3> Add New Food Item to List:</h3>
-					<%= form_for @food do |f| %>
-						
-						<div class="form-group">
-							<%= f.text_field :name, placeholder: 'Food Name', class: 'form-control' %>
-							<br>
-							<%= f.text_field :price, placeholder: 'Price', class: 'form-control' %>
-							<br>
-							<div class="form-group">
-								<%= f.select :category_id, Category.all.collect {|x| [x.name, x.id]}, {:include_blank => 'Select One'},class:'form-control' %>
-							</div>
-							<%= f.submit "Add New", class: 'btn btn-primary' %>
-							<%=link_to "Cancel", foods_path %>
-						</div>
+			<h2>How many people?</h2>
 
 
-					<% end %>
+			<h3>Select your entres:</h3>
+			<% @foods.each do |food| %>
+				<% if food.category.name == "Entree" %>
+					<%= food.name %>
+					<%= food.price %>
+				<% end %>
+			<% end %>
 
-					<span><%= link_to "+ Add new category", categories_new_path %></span>
+			<h3>Select your Dessert:</h3>
+			<% @foods.each do |food| %>
+				<% if food.category.name == "Dessert" %>
+					<%= food.name %>
+				<% end %>
+			<% end %>
 
-				</div>
-				<div class="col-md-8">
-					<table class="table table-striped">
-						<thead>
-							<tr>
-								<td scope="col">Food</td>
-								<td>Price</td>
-								<td>Category</td>
-								<td></td>
-							</tr>
-						</thead>
-						<tbody>
-					<% @foods.each do |food| %>
-					<tr>
-						<td><%= food.name %></td>
-						<td>$<%= food.price %></td>
-						<td><%= food.category.name %></td>
-						<td><%= link_to 'Edit', edit_food_path(food.id) %> | <%= link_to 'Delete', food_path(food), method: :delete, data: {confirm: 'Are you sure?'} %></td>
-					</tr>
-					<% end %>
-				</tbody>
-					</table>
-				</div>
-			</div>
+			<h3>Select your sides:</h3>
+			<% @foods.each do |food| %>
+				<% if food.category.name == "Side" %>
+					<%= food.name %>
+				<% end %>
+			<% end %>
+
 		</div>
 	</div>
 </div>
