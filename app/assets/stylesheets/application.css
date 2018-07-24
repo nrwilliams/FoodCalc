@@ -27,3 +27,56 @@
 .food-item-active {
 	background:#333;
 }
+
+#range {
+  width: 180px;
+  height: 4px;
+  border: 0;
+  border-radius: 100px;
+  background: rgba(0,0,0,0.2);
+  outline: none;
+}
+#range .ui-slider-handle {
+  position: absolute;
+  margin: -6px 0 0 -17px;
+  border-radius: 100px;
+  background: #158789;
+  color: #158789;
+  border: 0;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  width: 34px;
+  outline: none;
+  cursor: pointer;
+  font-size: 8px;
+  font-weight: 800;
+  text-decoration: none;
+  transition: transform 0.1s ease;
+}
+#range .ui-slider-handle:hover,
+#range .ui-slider-handle:focus {
+  transform: scale(1.1);
+}
+#range .ui-slider-range {
+  background: #69b6b5;
+}
+.cntr {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.range-slider {
+	position: relative;
+    display: block;
+    top: 0;
+    margin-bottom: 40px;
+}
+.ui-slider-handle {
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: monospace;
+    letter-spacing: -4px;
+  	color: #158789;
+}

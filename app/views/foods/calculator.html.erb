@@ -1,12 +1,19 @@
 <div class="container">
+
 	<div class="row">
 		<div class="col-md-12">
 
 			<h2>How many people?</h2>
-			<input type="text" class="number-of-people">
+			<div class="ui-slider-handle"></div>
+			<div class="cntr range-slider" id="range"></div>
 
+		</div>
+	</div>
 
-			<h3>Select your entres:</h3>
+	<div class="row">
+		<div class="col-md-4">
+
+			<h3>Select your entrees:</h3>
 			<div class="category">
 			<% @foods.each do |food| %>
 				<% if food.category.name == "Entree" %>
@@ -18,6 +25,22 @@
 				<% end %>
 			<% end %>
 			</div>
+		</div>
+		<div class="col-md-4">
+
+			<h3>Select your Sides:</h3>
+			<% @foods.each do |food| %>
+				<% if food.category.name == "Side" %>
+					<div class="food-item">
+						<%= food.name %>
+						$<span class="price"><%= food.price %></span>
+						<input type="hidden" class="hidden">
+					</div>
+				<% end %>
+			<% end %>
+		</div>
+
+		<div class="col-md-4">
 
 			<h3>Select your Dessert:</h3>
 			<% @foods.each do |food| %>
@@ -29,39 +52,30 @@
 					</div>
 				<% end %>
 			<% end %>
+		</div>
 
-			<h3>Select your sides:</h3>
-			<% @foods.each do |food| %>
-				<% if food.category.name == "Side" %>
-					<div class="food-item">
-						<%= food.name %>
-						$<span class="price"><%= food.price %></span>
-						<input type="hidden" class="hidden">
-					</div>
-				<% end %>
-			<% end %>
-
-			<button class="calculate">GET TOTAL</button>
+		<button class="calculate">GET TOTAL</button>
 			<input type="text" class="selected-total">
 
-		</div>
 	</div>
 </div>
 
 <script>
+
 jQuery('.food-item').on('click', function() {
-	jQuery(this).toggleClass('food-item-active');
+
+		jQuery(this).toggleClass('food-item-active');
 	var price = jQuery(this).find('span').html();
-	if(jQuery(this).hasClass('food-item-active')) {
-		jQuery(this).find('.hidden').val(price);
-	}	else {
-		jQuery(this).find('.hidden').val('');
-	}
+		if(jQuery(this).hasClass('food-item-active')) {
+			jQuery(this).find('.hidden').val(price);
+		}	else {
+			jQuery(this).find('.hidden').val('');
+		};
 
 });
 
 jQuery('.calculate').on('click', function() {
-	var people = jQuery('.number-of-people').val();
+	var people = jQuery('.ui-slider-handle').html();
  	var sum = 0;
 
 	jQuery('.hidden').each(function() {
@@ -73,4 +87,20 @@ jQuery('.calculate').on('click', function() {
 	jQuery(".selected-total").val(totalDecimal * people);
 
 });
+</script>
+<script>
+		(function() {
+			  jQuery("#range").slider({
+			    range: "min",
+			    min: 2,
+			    max: 50,
+			    value: 12,
+			    slide: function(e, ui) {
+			      return jQuery(".ui-slider-handle").html(ui.value);
+			    }
+			  });
+
+			  jQuery(".ui-slider-handle").html("12");
+
+		}).call(this);
 </script>

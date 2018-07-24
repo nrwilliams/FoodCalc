@@ -42,7 +42,6 @@ class FoodsController < ApplicationController
     @foods = Food.all
     @categories = Category.all
 
-    @x = params[:x].to_i
   end
 
 
