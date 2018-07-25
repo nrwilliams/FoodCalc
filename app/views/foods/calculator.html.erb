@@ -5,12 +5,12 @@
 
 <div class="party-intro">
 	<h2>Party Size?</h2>
-	<div class="people-slider-number">
-		<i class="far fa-user-circle people-icon"></i> 
-		<div class="ui-slider-handle"></div>
-	</div>
 
-	<div class="cntr range-slider" id="range"></div>
+	<form id='PeopleQTY' method='POST' action='#'>
+	    <input type='button' value='-' class='qtyminus' field='quantity' />
+	    <input type='text' name='quantity' value='0' class='qty' />
+	    <input type='button' value='+' class='qtyplus' field='quantity' />
+	</form>
 
 </div>
 
@@ -91,7 +91,7 @@ jQuery('.food-item').on('click', function() {
 });
 
 jQuery('.calculate').on('click', function() {
-	var people = jQuery('.ui-slider-handle').html();
+	var people = jQuery('#PeopleQTY .qty').val();
  	var sum = 0;
 
 	jQuery('.hidden').each(function() {
@@ -107,18 +107,41 @@ jQuery('.calculate').on('click', function() {
 });
 </script>
 <script>
-		(function() {
-			  jQuery("#range").slider({
-			    range: "min",
-			    min: 2,
-			    max: 50,
-			    value: 12,
-			    slide: function(e, ui) {
-			      return jQuery(".ui-slider-handle").html(ui.value);
-			    }
-			  });
+	jQuery(document).ready(function(){
+    // This button will increment the value
+    $('.qtyplus').click(function(e){
+        // Stop acting like a button
+        e.preventDefault();
+        // Get the field name
+        fieldName = $(this).attr('field');
+        // Get its current value
+        var currentVal = parseInt($('input[name='+fieldName+']').val());
+        // If is not undefined
+        if (!isNaN(currentVal)) {
+            // Increment
+            $('input[name='+fieldName+']').val(currentVal + 1);
+        } else {
+            // Otherwise put a 0 there
+            $('input[name='+fieldName+']').val(0);
+        }
+    });
+    // This button will decrement the value till 0
+    $(".qtyminus").click(function(e) {
+        // Stop acting like a button
+        e.preventDefault();
+        // Get the field name
+        fieldName = $(this).attr('field');
+        // Get its current value
+        var currentVal = parseInt($('input[name='+fieldName+']').val());
+        // If it isn't undefined or its greater than 0
+        if (!isNaN(currentVal) && currentVal > 0) {
+            // Decrement one
+            $('input[name='+fieldName+']').val(currentVal - 1);
+        } else {
+            // Otherwise put a 0 there
+            $('input[name='+fieldName+']').val(0);
+        }
+    });
+});
 
-			  jQuery(".ui-slider-handle").html("12");
-
-		}).call(this);
 </script>
