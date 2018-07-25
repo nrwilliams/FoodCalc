@@ -16,56 +16,58 @@
 
 <div class="next-section"><i class="fas fa-arrow-down"></i></div>
 
-<div class="container food">
+<div class="food">
+	<div class="container">
 
-	<div class="row">
-		<div class="col-md-4">
+		<div class="row">
+			<div class="col-md-4">
 
-			<h3>Select your entrees:</h3>
-			<div class="category">
-			<% @foods.each do |food| %>
-				<% if food.category.name == "Entree" %>
-					<div class="food-item">
-						<div class="food-name"><%= food.name %></div>
-						$<span class="price"><%= number_to_currency(food.price, :unit => "") %></span>
-						<input type="hidden" class="hidden">
-					</div>
+				<h3>Select your entrees:</h3>
+				<div class="category">
+				<% @foods.each do |food| %>
+					<% if food.category.name == "Entree" %>
+						<div class="food-item">
+							<div class="food-name"><%= food.name %></div>
+							$<span class="price"><%= number_to_currency(food.price, :unit => "") %></span>
+							<input type="hidden" class="hidden">
+						</div>
+					<% end %>
 				<% end %>
-			<% end %>
+				</div>
 			</div>
-		</div>
-		<div class="col-md-4">
+			<div class="col-md-4">
 
-			<h3>Select your Sides:</h3>
-			<% @foods.each do |food| %>
-				<% if food.category.name == "Side" %>
-					<div class="food-item">
-						<div class="food-name"><%= food.name %></div>
-						$<span class="price"><%= number_to_currency(food.price, :unit => "") %></span>
-						<input type="hidden" class="hidden">
-					</div>
+				<h3>Select your Sides:</h3>
+				<% @foods.each do |food| %>
+					<% if food.category.name == "Side" %>
+						<div class="food-item">
+							<div class="food-name"><%= food.name %></div>
+							$<span class="price"><%= number_to_currency(food.price, :unit => "") %></span>
+							<input type="hidden" class="hidden">
+						</div>
+					<% end %>
 				<% end %>
-			<% end %>
-		</div>
+			</div>
 
-		<div class="col-md-4">
+			<div class="col-md-4">
 
-			<h3>Select your Dessert:</h3>
-			<% @foods.each do |food| %>
-				<% if food.category.name == "Dessert" %>
-					<div class="food-item">
-						<div class="food-name"><%= food.name %></div>
-						$<span class="price"><%= number_to_currency(food.price, :unit => "") %></span>
-						<input type="hidden" class="hidden">
-					</div>
+				<h3>Select your Dessert:</h3>
+				<% @foods.each do |food| %>
+					<% if food.category.name == "Dessert" %>
+						<div class="food-item">
+							<div class="food-name"><%= food.name %></div>
+							$<span class="price"><%= number_to_currency(food.price, :unit => "") %></span>
+							<input type="hidden" class="hidden">
+						</div>
+					<% end %>
 				<% end %>
-			<% end %>
+			</div>
+
 		</div>
 
+	<div class="next-section"><i class="fas fa-arrow-down"></i></div>
 	</div>
-
-<div class="next-section"><i class="fas fa-arrow-down"></i></div>
-
+</div>
 
 			<div class="final-price">
 				<div>$</div><span class="amount">0</span>
@@ -73,8 +75,6 @@
 				<button class="calculate">GET TOTAL</button>
 				<%=link_to "Start Over", root_path, class:"start-over" %>
 			</div>
-
-</div>
 
 <script>
 
