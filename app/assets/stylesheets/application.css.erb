@@ -17,6 +17,7 @@
  /* MAIN CSS */
  body {font-family: 'lato' !important;}
 
+/* MENU -- NAVIGATION */
  .navbar {
  	background: #3e90d6 !important;
  	color:#fff;
@@ -34,20 +35,20 @@
  }
 
  /* CSS for CALCULATOR PAGE */
- .hero {
+ .food-hero {
  	background-image: url(<%= asset_path 'foodcalc-hero-bg.jpg' %>);
   background-size: cover;
   padding: 110px 0 188px 0;
   background-position: center center;
  }
- .hero h1 {
+ .food-hero h1 {
   font-weight: 900;
   color: #fff;
   text-align: center;
   font-size: 5rem;
   letter-spacing: 1px;
  }
- .hero h2 {
+ .food-hero h2 {
   font-weight: 100;
   font-size: 1.2rem;
   text-transform: uppercase;
@@ -217,4 +218,25 @@
     font-weight: bold;
     letter-spacing: -4px;
   	color: #3e90d6;
+}
+
+/* MOBILE STYLES */
+@media screen and (max-width: 450px) {
+  .food-hero {
+    padding: 58px 0 128px 0;
+  }
+  .food-item {
+    margin: 10px 0;
+  }
+  .food-hero h1 {
+    font-size:3rem;
+    line-height:2.8rem;
+  }
+  .food-hero h2 {
+    font-size: 1rem;
+    letter-spacing: 2px;
+    line-height: 1.3rem;
+    max-width: 240px;
+    margin: 0 auto;
+  }
 }
