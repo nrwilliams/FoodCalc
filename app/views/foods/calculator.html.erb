@@ -1,4 +1,7 @@
-<div class="hero"></div>
+<div class="hero">
+	<h1>CATERING MADE SIMPLE</h1>
+	<h2>See what your party, gathering, or event will cost!</h2>
+</div>
 
 <div class="party-intro">
 	<h2>Party Size?</h2>
@@ -11,6 +14,8 @@
 
 </div>
 
+<div class="next-section"><i class="fas fa-arrow-down"></i></div>
+
 <div class="container food">
 
 	<div class="row">
@@ -21,8 +26,8 @@
 			<% @foods.each do |food| %>
 				<% if food.category.name == "Entree" %>
 					<div class="food-item">
-						<%= food.name %>
-						$<span class="price"><%= food.price %></span>
+						<div class="food-name"><%= food.name %></div>
+						$<span class="price"><%= number_to_currency(food.price, :unit => "") %></span>
 						<input type="hidden" class="hidden">
 					</div>
 				<% end %>
@@ -35,8 +40,8 @@
 			<% @foods.each do |food| %>
 				<% if food.category.name == "Side" %>
 					<div class="food-item">
-						<%= food.name %>
-						$<span class="price"><%= food.price %></span>
+						<div class="food-name"><%= food.name %></div>
+						$<span class="price"><%= number_to_currency(food.price, :unit => "") %></span>
 						<input type="hidden" class="hidden">
 					</div>
 				<% end %>
@@ -49,18 +54,26 @@
 			<% @foods.each do |food| %>
 				<% if food.category.name == "Dessert" %>
 					<div class="food-item">
-						<%= food.name %>
-						$<span class="price"><%= food.price %></span>
+						<div class="food-name"><%= food.name %></div>
+						$<span class="price"><%= number_to_currency(food.price, :unit => "") %></span>
 						<input type="hidden" class="hidden">
 					</div>
 				<% end %>
 			<% end %>
 		</div>
 
-		<button class="calculate">GET TOTAL</button>
-			<input type="text" class="selected-total">
-
 	</div>
+
+<div class="next-section"><i class="fas fa-arrow-down"></i></div>
+
+
+			<div class="final-price">
+				<div>$</div><span class="amount">0</span>
+				<div class="party-size">feeds <span></span> people</div>
+				<button class="calculate">GET TOTAL</button>
+				<%=link_to "Start Over", root_path, class:"start-over" %>
+			</div>
+
 </div>
 
 <script>
@@ -86,8 +99,10 @@ jQuery('.calculate').on('click', function() {
 	});
 
 	var totalDecimal = (sum).toFixed(2);
+	var finalPrice = (totalDecimal * people).toFixed(2);
 
-	jQuery(".selected-total").val(totalDecimal * people);
+	jQuery(".party-size span").html(people);
+	jQuery(".final-price .amount").html(finalPrice);
 
 });
 </script>
