@@ -5,12 +5,12 @@ class CategoriesController < ApplicationController
   end
 
   def create
-    @food = Category.new(category_params)
-    @food.save
+    @category = Category.new(category_params)
+    @category.save
 
     flash[:notice] = 'Category Added'
 
-    redirect_to categories_path
+    redirect_to categories_show_path
   end
 
   def index
@@ -18,18 +18,28 @@ class CategoriesController < ApplicationController
   end
 
   def edit
+    @category = Category.find(params[:id])
   end
 
   def update
+    @category = Category.find(params[:id])
+    @category.update(category_params)
+
+    redirect_to categories_show_path
   end
 
   def destroy
+    @category = Category.find(params[:id])
+    @category.destroy
+
+    flash[:notice] = 'Category Deleted'
+
+    redirect_to categories_show_path
   end
 
   def show
-    @category = Category.find(params[:id])
     @categories = Category.all
-    @foods =  @category.foods
+    @category = Category.new
   end
   private
     def category_params

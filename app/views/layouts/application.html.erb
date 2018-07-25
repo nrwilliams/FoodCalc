@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>FoodCalc</title>
+    <%= csrf_meta_tags %>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -24,7 +25,7 @@
     
     <nav class="navbar navbar-expand-lg">
       <div class="container">
-        <a class="navbar-brand" href="#"><i class="fas fa-utensils"></i> FoodCalc</a>
+         <i class="fas fa-utensils"></i><%= link_to "FoodCalc", root_path, class: "navbar-brand" %>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -35,6 +36,9 @@
             </li>
             <li class="nav-item">
               <%= link_to "Food Options", foods_show_path, class: "nav-link" %>
+            </li>
+            <li class="nav-item">
+              <%= link_to "Categories", categories_show_path, class: "nav-link" %>
             </li>
           </ul>
         </div>

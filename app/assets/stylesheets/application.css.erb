@@ -16,6 +16,22 @@
 
  /* MAIN CSS */
  body {font-family: 'lato' !important;}
+ .btn-primary {
+    color: #fff;
+    background-color: #3d90d7;
+    border-color: #3d90d7;
+    font-family:'lato';
+    text-transform:uppercase;
+    font-weight:100;
+    font-size:95%;
+    padding:10px 20px;
+}
+a {
+    color: #3d90d7;
+}
+.alert {
+  margin-bottom: -12px;
+}
 
 /* MENU -- NAVIGATION */
  .navbar {
@@ -32,9 +48,29 @@
  	font-weight:bold;
  	color:#fff;
  	text-transform: inherit;
+  transition: all ease .5s;
+ }
+ .navbar-brand:hover {
+  color: #fff;
+    opacity: .7;
  }
 
  /* CSS for CALCULATOR PAGE */
+ .food-list-hero {
+  background-image: url(<%= asset_path 'food-options.jpg' %>);
+  background-size: cover;
+  padding: 70px 0 70px 0;
+  margin-bottom:30px;
+  background-position: center center;
+ }
+ .food-list-hero h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
+    letter-spacing: 8px;
+    font-weight: 100;
+    text-transform: uppercase;
+ }
  .food-hero {
  	background-image: url(<%= asset_path 'foodcalc-hero-bg.jpg' %>);
   background-size: cover;
@@ -253,6 +289,7 @@
     line-height: 32px;
     color: #3d90d8;
     font-weight: 900;
+    background:#fff;
     text-align: center;
 }
 .qtyplus {
@@ -270,12 +307,25 @@
     color: #3d90d8;
     font-weight: 900;
     text-align: center;
+    background:#fff;
+}
+
+/* FOOD OPTIONS PAGE */
+
+#new_food {
+  max-width: 286px;
+}
+.add-food-title {
+    font-size: 1.5rem;
+    border-bottom: 4px solid #3d90d7;
+    padding-bottom: 10px;
+    margin-bottom: 18px;
 }
 
 /* MOBILE STYLES */
 @media screen and (max-width: 450px) {
   .food-hero {
-    padding: 58px 0 128px 0;
+    padding: 58px 0 168px 0;
   }
   .food-item {
     margin: 10px 0;

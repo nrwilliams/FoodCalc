@@ -1,2 +1,12 @@
-<h1>Categories#edit</h1>
-<p>Find me in app/views/categories/edit.html.erb</p>
+<%= form_for @category do |cat| %>
+	
+	<div class="form-group">
+		<%= cat.text_field :name, placeholder: 'Category Name', class: 'form-control' %>
+		<br>
+		<%= cat.submit "Submit", class: 'btn btn-primary' %>
+		<%=link_to "Cancel", foods_path %>
+	</div>
+
+
+<% end %>
+
